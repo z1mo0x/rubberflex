@@ -318,6 +318,10 @@ fieldset {
   border: 1px solid #C1C1C1;
   padding: 19px;
 }
+.header__button {
+  border: 1px solid #C1C1C1;
+}
+
 .sidebar {
   position: fixed;
   top: 0;

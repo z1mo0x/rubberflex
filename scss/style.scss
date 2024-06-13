@@ -393,7 +393,10 @@ fieldset {
         padding: 19px;
     }
 
-    &__button {}
+    &__button {
+        border: 1px solid #C1C1C1;
+
+    }
 }
 
 .sidebar {
