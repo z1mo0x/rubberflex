@@ -348,9 +348,17 @@ fieldset {
     font-size: 20px;
     cursor: pointer;
     line-height: 125%;
-    border: none;
+    border: 1px solid transparent;
+    transition: all .3s;
     outline: none;
     text-decoration: none;
+}
+
+.button:hover {
+    transition: all .3s;
+    color: #004F3D;
+    background: white;
+    border: 1px solid #004F3D;
 }
 
 .button-white {
@@ -362,11 +370,19 @@ fieldset {
     color: #004F3D;
     font-size: 20px;
     cursor: pointer;
+    transition: all .3s;
     line-height: 125%;
     border: none;
     outline: none;
     text-decoration: none;
     border: 1px solid #004F3D;
+}
+
+.button-white:hover {
+    background: #004F3D;
+    color: white;
+    transition: all .3s;
+    border: 1px solid transparent;
 }
 
 .header {
@@ -495,12 +511,18 @@ fieldset {
     &__wrapper {
         padding: 30px 37px 30px 60px;
         width: 100%;
-        display: grid;
-        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        gap: 40px;
     }
 
     &__close {
         display: flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
         cursor: pointer;
         justify-content: flex-end;
     }
@@ -508,37 +530,31 @@ fieldset {
     &__nav {
         display: grid;
         gap: 40px;
-        padding-bottom: 50px;
-        border-bottom: 2px solid rgba(29, 29, 29, 0.20);
+        height: max-content;
+        margin-top: 45px;
 
         a {
-            color: #1D1D1D;
+            color: #201E1E;
             font-size: 20px;
-            font-weight: 400;
-            line-height: 120%;
-            letter-spacing: -0.4px;
-            border-bottom: 2px solid transparent;
-            transition: all .3s;
-
-            &:hover {
-                border-bottom: 2px solid #717342;
-                transition: all .3s;
-            }
+            font-weight: 600;
+            line-height: 130%;
         }
     }
 
-    &__phone {
-        text-align: center;
+    &__info {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__info-block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #004F3D;
         font-size: 20px;
-        line-height: 120%;
-        letter-spacing: -0.4px;
-
-        a {
-            color: #717342;
-        }
+        font-weight: 600;
+        line-height: 130%;
     }
-
-    &__button {}
 }
 
 .menu-active {

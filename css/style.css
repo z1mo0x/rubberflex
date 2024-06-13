@@ -265,9 +265,19 @@ fieldset {
   font-size: 20px;
   cursor: pointer;
   line-height: 125%;
-  border: none;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   outline: none;
   text-decoration: none;
+}
+
+.button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #004F3D;
+  background: white;
+  border: 1px solid #004F3D;
 }
 
 .button-white {
@@ -285,11 +295,21 @@ fieldset {
   color: #004F3D;
   font-size: 20px;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   line-height: 125%;
   border: none;
   outline: none;
   text-decoration: none;
   border: 1px solid #004F3D;
+}
+
+.button-white:hover {
+  background: #004F3D;
+  color: white;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
 }
 
 .header {
@@ -444,13 +464,26 @@ fieldset {
 .menu__wrapper {
   padding: 30px 37px 30px 60px;
   width: 100%;
-  display: grid;
-  gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  gap: 40px;
 }
 .menu__close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
   cursor: pointer;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -459,33 +492,35 @@ fieldset {
 .menu__nav {
   display: grid;
   gap: 40px;
-  padding-bottom: 50px;
-  border-bottom: 2px solid rgba(29, 29, 29, 0.2);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 45px;
 }
 .menu__nav a {
-  color: #1D1D1D;
+  color: #201E1E;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -0.4px;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  font-weight: 600;
+  line-height: 130%;
 }
-.menu__nav a:hover {
-  border-bottom: 2px solid #717342;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.menu__info {
+  display: grid;
+  gap: 30px;
 }
-.menu__phone {
-  text-align: center;
+.menu__info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  color: #004F3D;
   font-size: 20px;
-  line-height: 120%;
-  letter-spacing: -0.4px;
+  font-weight: 600;
+  line-height: 130%;
 }
-.menu__phone a {
-  color: #717342;
-}
+
 .menu-active {
   left: 0;
   -webkit-transition: 0.3s all;
