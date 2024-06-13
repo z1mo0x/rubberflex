@@ -148,7 +148,7 @@ fieldset {
     left: 0;
     z-index: 10;
     height: 100vh;
-    width: 86px;
+    width: 80px;
     background: #fff;
     box-shadow: 2px 15px 29.2px 0px rgba(0, 0, 0, 0.10);
 
@@ -158,7 +158,6 @@ fieldset {
         flex-direction: column;
         height: 100%;
         gap: 20px;
-        padding: 25px 20px;
     }
 
     &__menu {
