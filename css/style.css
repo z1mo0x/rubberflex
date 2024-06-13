@@ -1,3 +1,122 @@
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Bold.eot");
+  src: local("RF Dewi Extended Bold"), local("RFDewiExtended-Bold"), url("../font/RFDewiExtended-Bold.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Bold.woff2") format("woff2"), url("../font/RFDewiExtended-Bold.woff") format("woff"), url("../font/RFDewiExtended-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Expanded";
+  src: url("RFDewiExpanded-BlackItalic.eot");
+  src: local("RF Dewi Expanded Black Italic"), local("RFDewiExpanded-BlackItalic"), url("RFDewiExpanded-BlackItalic.eot?#iefix") format("embedded-opentype"), url("RFDewiExpanded-BlackItalic.woff2") format("woff2"), url("RFDewiExpanded-BlackItalic.woff") format("woff"), url("RFDewiExpanded-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Light.eot");
+  src: local("RF Dewi Extended Light"), local("RFDewiExtended-Light"), url("../font/RFDewiExtended-Light.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Light.woff2") format("woff2"), url("../font/RFDewiExtended-Light.woff") format("woff"), url("../font/RFDewiExtended-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Black.eot");
+  src: local("RF Dewi Extended Black"), local("RFDewiExtended-Black"), url("../font/RFDewiExtended-Black.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Black.woff2") format("woff2"), url("../font/RFDewiExtended-Black.woff") format("woff"), url("../font/RFDewiExtended-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Regular.eot");
+  src: local("RF Dewi Extended Regular"), local("RFDewiExtended-Regular"), url("../font/RFDewiExtended-Regular.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Regular.woff2") format("woff2"), url("../font/RFDewiExtended-Regular.woff") format("woff"), url("../font/RFDewiExtended-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-UltralightItalic.eot");
+  src: local("RF Dewi Extended Ultralight Italic"), local("RFDewiExtended-UltralightItalic"), url("../font/RFDewiExtended-UltralightItalic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-UltralightItalic.woff2") format("woff2"), url("../font/RFDewiExtended-UltralightItalic.woff") format("woff"), url("../font/RFDewiExtended-UltralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-UltraboldItalic.eot");
+  src: local("RF Dewi Extended Ultrabold Italic"), local("RFDewiExtended-UltraboldItalic"), url("../font/RFDewiExtended-UltraboldItalic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-UltraboldItalic.woff2") format("woff2"), url("../font/RFDewiExtended-UltraboldItalic.woff") format("woff"), url("../font/RFDewiExtended-UltraboldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Expanded";
+  src: url("RFDewiExpanded-UltralightItalic.eot");
+  src: local("RF Dewi Expanded Ultralight Italic"), local("RFDewiExpanded-UltralightItalic"), url("RFDewiExpanded-UltralightItalic.eot?#iefix") format("embedded-opentype"), url("RFDewiExpanded-UltralightItalic.woff2") format("woff2"), url("RFDewiExpanded-UltralightItalic.woff") format("woff"), url("RFDewiExpanded-UltralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Italic.eot");
+  src: local("RF Dewi Extended Italic"), local("RFDewiExtended-Italic"), url("../font/RFDewiExtended-Italic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Italic.woff2") format("woff2"), url("../font/RFDewiExtended-Italic.woff") format("woff"), url("../font/RFDewiExtended-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Ultrabold.eot");
+  src: local("RF Dewi Extended Ultrabold"), local("RFDewiExtended-Ultrabold"), url("../font/RFDewiExtended-Ultrabold.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Ultrabold.woff2") format("woff2"), url("../font/RFDewiExtended-Ultrabold.woff") format("woff"), url("../font/RFDewiExtended-Ultrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-LightItalic.eot");
+  src: local("RF Dewi Extended Light Italic"), local("RFDewiExtended-LightItalic"), url("../font/RFDewiExtended-LightItalic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-LightItalic.woff2") format("woff2"), url("../font/RFDewiExtended-LightItalic.woff") format("woff"), url("../font/RFDewiExtended-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Thin.eot");
+  src: local("RF Dewi Extended Thin"), local("RFDewiExtended-Thin"), url("../font/RFDewiExtended-Thin.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Thin.woff2") format("woff2"), url("../font/RFDewiExtended-Thin.woff") format("woff"), url("../font/RFDewiExtended-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Semibold.eot");
+  src: local("RF Dewi Extended Semibold"), local("RFDewiExtended-Semibold"), url("../font/RFDewiExtended-Semibold.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Semibold.woff2") format("woff2"), url("../font/RFDewiExtended-Semibold.woff") format("woff"), url("../font/RFDewiExtended-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-BoldItalic.eot");
+  src: local("RF Dewi Extended Bold Italic"), local("RFDewiExtended-BoldItalic"), url("../font/RFDewiExtended-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-BoldItalic.woff2") format("woff2"), url("../font/RFDewiExtended-BoldItalic.woff") format("woff"), url("../font/RFDewiExtended-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-BlackItalic.eot");
+  src: local("RF Dewi Extended Black Italic"), local("RFDewiExtended-BlackItalic"), url("../font/RFDewiExtended-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-BlackItalic.woff2") format("woff2"), url("../font/RFDewiExtended-BlackItalic.woff") format("woff"), url("../font/RFDewiExtended-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-Ultralight.eot");
+  src: local("RF Dewi Extended Ultralight"), local("RFDewiExtended-Ultralight"), url("../font/RFDewiExtended-Ultralight.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-Ultralight.woff2") format("woff2"), url("../font/RFDewiExtended-Ultralight.woff") format("woff"), url("../font/RFDewiExtended-Ultralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RF Dewi Extended";
+  src: url("../font/RFDewiExtended-ThinItalic.eot");
+  src: local("RF Dewi Extended Thin Italic"), local("RFDewiExtended-ThinItalic"), url("../font/RFDewiExtended-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../font/RFDewiExtended-ThinItalic.woff2") format("woff2"), url("../font/RFDewiExtended-ThinItalic.woff") format("woff"), url("../font/RFDewiExtended-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +131,8 @@ html {
 
 body {
   margin: 0;
+  font-family: "RF Dewi Extended";
+  font-weight: 400;
 }
 
 hr {
@@ -82,6 +203,8 @@ input {
 button,
 select {
   text-transform: none;
+  outline: none;
+  border: none;
 }
 
 [type=button],
@@ -122,20 +245,78 @@ fieldset {
   margin: 0 auto;
 }
 
+.button {
+  background: #004F3D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 125%;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.button-white {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  color: #004F3D;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 125%;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border: 1px solid #004F3D;
+}
+
+.header {
+  border-bottom: 1px solid #DADADA;
+  background: rgba(0, 0, 0, 0.2);
+}
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 34px 0;
 }
 .header__menu {
   gap: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__profile {
+  border: 1px solid #C1C1C1;
+  padding: 19px;
 }
 .sidebar {
   position: fixed;
@@ -159,8 +340,21 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
+}
+.sidebar__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
-  gap: 20px;
+  gap: 15px;
 }
 .sidebar__menu {
   cursor: pointer;
@@ -170,29 +364,38 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   width: 2px;
-  background: #E9E5DC;
+  background: #6CA195;
 }
 .sidebar__button {
-  display: block;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  margin-top: 100px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  width: 100%;
 }
 .sidebar__button button {
-  border: 2px solid #717342;
-  background: #717342;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   font-size: 16px;
   font-weight: 700;
-  width: 275px;
   padding: 20px 15px;
   line-height: 100%;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
