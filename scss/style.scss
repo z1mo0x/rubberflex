@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+ul {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+img {
+    border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+[type=checkbox],
+[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.header {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 34px 0;
+    }
+
+    &__menu {
+        gap: 25px;
+        display: flex;
+    }
+
+    &__details {}
+
+    &__info {}
+
+    &__profile {}
+
+    &__button {}
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100vh;
+    width: 86px;
+    background: #fff;
+    box-shadow: 2px 15px 29.2px 0px rgba(0, 0, 0, 0.10);
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        gap: 20px;
+        padding: 25px 20px;
+    }
+
+    &__menu {
+        cursor: pointer;
+    }
+
+    &__search {}
+
+    &__icon {}
+
+    &__line {
+        padding: 30px 0;
+        display: flex;
+        height: 10vh;
+        width: 2px;
+        background: #E9E5DC;
+    }
+
+    &__button {
+        display: block;
+        transform: rotate(-90deg);
+        transform-origin: center;
+        margin-top: 100px;
+
+        button {
+            border: 2px solid #717342;
+            background: #717342;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            width: 275px;
+            padding: 20px 15px;
+            line-height: 100%;
+        }
+    }
+}
+
+.menu {
+    transition: all .7s;
+    background: white;
+    z-index: 10;
+    width: 400px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+
+    &__wrapper {
+        padding: 30px 37px 30px 60px;
+        width: 100%;
+        display: grid;
+        gap: 30px;
+    }
+
+    &__close {
+        display: flex;
+        cursor: pointer;
+        justify-content: flex-end;
+    }
+
+    &__nav {
+        display: grid;
+        gap: 40px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid rgba(29, 29, 29, 0.20);
+
+        a {
+            color: #1D1D1D;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 120%;
+            letter-spacing: -0.4px;
+            border-bottom: 2px solid transparent;
+            transition: all .3s;
+
+            &:hover {
+                border-bottom: 2px solid #717342;
+                transition: all .3s;
+            }
+        }
+    }
+
+    &__phone {
+        text-align: center;
+        font-size: 20px;
+        line-height: 120%;
+        letter-spacing: -0.4px;
+
+        a {
+            color: #717342;
+        }
+    }
+
+    &__button {}
+}
+
+.menu-active {
+    left: 0;
+    transition: .3s all;
+}
