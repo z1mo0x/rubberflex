@@ -435,6 +435,10 @@ fieldset {
     &__button {
         border: 1px solid #C1C1C1;
 
+        &:hover {
+            border: 1px solid #C1C1C1;
+
+        }
     }
 }
 
@@ -502,14 +506,14 @@ fieldset {
     transition: all .7s;
     background: white;
     z-index: 10;
-    width: 400px;
+    width: 310px;
     position: fixed;
     height: 100vh;
     top: 0;
     left: -100%;
 
     &__wrapper {
-        padding: 30px 37px 30px 60px;
+        padding: 15px 15px 55px 35px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -538,6 +542,12 @@ fieldset {
             font-size: 20px;
             font-weight: 600;
             line-height: 130%;
+            transition: all .3s;
+
+            &:hover {
+                color: #004F3D;
+                transition: all .3s;
+            }
         }
     }
 
@@ -555,6 +565,58 @@ fieldset {
         font-weight: 600;
         line-height: 130%;
     }
+
+    &__downtoggle {
+        &>a {
+            position: relative;
+            width: 100%;
+
+            &::after {
+                content: url('../img/menu-toggle.png');
+                position: absolute;
+                right: -30px;
+                height: 100%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &:hover .menu__downbackground {
+            transition: all .2s;
+            left: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+    }
+
+    &__downbackground {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-left: 1px solid #C1C1C1;
+        transition: all .2s;
+        left: -100%;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+        height: 100vh;
+        width: 350px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__downmenu {
+        padding: 0px 25px;
+        z-index: 2;
+        display: grid;
+        justify-content: center;
+        gap: 40px;
+        transition: all .3s;
+    }
+
 }
 
 .menu-active {

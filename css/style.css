@@ -369,6 +369,9 @@ fieldset {
 .header__button {
   border: 1px solid #C1C1C1;
 }
+.header__button:hover {
+  border: 1px solid #C1C1C1;
+}
 
 .sidebar {
   position: fixed;
@@ -455,14 +458,14 @@ fieldset {
   transition: all 0.7s;
   background: white;
   z-index: 10;
-  width: 400px;
+  width: 310px;
   position: fixed;
   height: 100vh;
   top: 0;
   left: -100%;
 }
 .menu__wrapper {
-  padding: 30px 37px 30px 60px;
+  padding: 15px 15px 55px 35px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,6 +505,13 @@ fieldset {
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.menu__nav a:hover {
+  color: #004F3D;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .menu__info {
   display: grid;
@@ -519,6 +529,60 @@ fieldset {
   font-size: 20px;
   font-weight: 600;
   line-height: 130%;
+}
+.menu__downtoggle > a {
+  position: relative;
+  width: 100%;
+}
+.menu__downtoggle > a::after {
+  content: url("../img/menu-toggle.png");
+  position: absolute;
+  right: -30px;
+  height: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.menu__downtoggle:hover .menu__downbackground {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  left: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+.menu__downbackground {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-left: 1px solid #C1C1C1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  left: -100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  height: 100vh;
+  width: 350px;
+  position: absolute;
+  z-index: 1;
+}
+.menu__downmenu {
+  padding: 0px 25px;
+  z-index: 2;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .menu-active {
