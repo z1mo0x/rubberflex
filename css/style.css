@@ -313,8 +313,8 @@ fieldset {
 }
 
 .header {
-  border-bottom: 1px solid #DADADA;
   background: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #DADADA;
   height: 80px;
   position: sticky;
   width: 100%;
@@ -611,6 +611,7 @@ body {
 .hero__slide .container {
   margin-top: 220px;
   display: grid;
+  gap: 50px;
   grid-template-columns: repeat(2, 1fr);
 }
 .hero__slide-image {
