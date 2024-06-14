@@ -389,6 +389,10 @@ fieldset {
     border-bottom: 1px solid #DADADA;
     background: rgba(0, 0, 0, 0.20);
     height: 80px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 
     &__wrapper {
         display: flex;
@@ -622,4 +626,129 @@ fieldset {
 .menu-active {
     left: 0;
     transition: .3s all;
+}
+
+body {
+    height: 200vh;
+}
+
+.hero {
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    &__slider {}
+
+    &__slide {
+        position: relative;
+
+        .container {
+            margin-top: 220px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__slide-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        filter: brightness(.5);
+        height: 90%;
+
+    }
+
+    &__slide-block {
+        position: relative;
+        z-index: 1;
+
+    }
+
+    // &__slider-right {
+    //     height: 100%;
+    // }
+
+    &__slide-logo {}
+
+    &__slide-title {
+        color: #FFF;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 100%;
+        margin-top: 90px;
+    }
+
+    &__slide-text {
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-top: 30px;
+    }
+
+    &__slide-button {
+        margin-top: 40px;
+        width: 305px;
+    }
+
+    &__slider-prev {
+        background: rgba(53, 53, 53, 0.50);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+    }
+
+    &__slider-next {
+        background: rgba(53, 53, 53, 0.50);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+
+    &__slider-pagination {
+        position: relative;
+        width: max-content;
+        color: white;
+        color: #DADADA;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-top: 10px;
+
+        .swiper-pagination-current {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+
+
+    &__slider-controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        gap: 22px;
+        position: absolute;
+        left: 16.5vw;
+        bottom: 225px;
+    }
 }

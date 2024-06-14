@@ -316,6 +316,10 @@ fieldset {
   border-bottom: 1px solid #DADADA;
   background: rgba(0, 0, 0, 0.2);
   height: 80px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -589,4 +593,127 @@ fieldset {
   left: 0;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+
+body {
+  height: 200vh;
+}
+
+.hero__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.hero__slide {
+  position: relative;
+}
+.hero__slide .container {
+  margin-top: 220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero__slide-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  height: 90%;
+}
+.hero__slide-block {
+  position: relative;
+  z-index: 1;
+}
+.hero__slide-title {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 100%;
+  margin-top: 90px;
+}
+.hero__slide-text {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 30px;
+}
+.hero__slide-button {
+  margin-top: 40px;
+  width: 305px;
+}
+.hero__slider-prev {
+  background: rgba(53, 53, 53, 0.5);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+.hero__slider-next {
+  background: rgba(53, 53, 53, 0.5);
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.hero__slider-pagination {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: white;
+  color: #DADADA;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 130%;
+  margin-top: 10px;
+}
+.hero__slider-pagination .swiper-pagination-current {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+}
+.hero__slider-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 22px;
+  position: absolute;
+  left: 16.5vw;
+  bottom: 225px;
 }
