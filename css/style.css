@@ -245,7 +245,7 @@ fieldset {
 }
 
 .container {
-  max-width: 1350px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -310,6 +310,25 @@ fieldset {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.title__count {
+  color: #004F3D;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.title__text {
+  color: rgba(53, 53, 53, 0.5);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
 }
 
 .header {
@@ -708,4 +727,87 @@ fieldset {
   position: absolute;
   left: 16.5vw;
   bottom: 225px;
+}
+
+.catalog {
+  position: relative;
+}
+.catalog__bg {
+  position: absolute;
+  top: -120px;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+.catalog__products {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 100px;
+}
+.product__image {
+  border-radius: 50px 50px 0 50px;
+  overflow: hidden;
+  width: 100%;
+}
+.product__image img {
+  width: 100%;
+}
+.product:hover .product__title {
+  color: #004F3D;
+}
+.product__type {
+  margin-top: 30px;
+  color: rgba(53, 53, 53, 0.5);
+  font-size: 15px;
+  line-height: 130%;
+}
+.product__title {
+  margin-top: 13px;
+  color: var(--black, #201E1E);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 130%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.product__price {
+  color: #000;
+  text-align: right;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.product-big__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.product-big__text {
+  display: grid;
+  width: 50%;
+}
+.product-big__title {
+  color: var(--black, #201E1E);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 110%;
+}
+.product-big__descr {
+  color: var(--second_grey, rgba(53, 53, 53, 0.5));
+  font-size: 20px;
+  line-height: 130%;
+}
+.product-big__button {
+  width: 50px;
+  height: 50px;
 }
