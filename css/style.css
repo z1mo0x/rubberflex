@@ -245,7 +245,7 @@ fieldset {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 
@@ -316,8 +316,8 @@ fieldset {
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid #DADADA;
   height: 80px;
-  position: sticky;
   width: 100%;
+  position: absolute;
   top: 0;
   z-index: 10;
 }
@@ -349,6 +349,7 @@ fieldset {
 }
 .header__info {
   color: white;
+  display: block;
 }
 .header__links {
   display: -webkit-box;
@@ -595,16 +596,6 @@ fieldset {
   transition: 0.3s all;
 }
 
-body {
-  height: 200vh;
-}
-
-.hero__wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
 .hero__slide {
   position: relative;
 }

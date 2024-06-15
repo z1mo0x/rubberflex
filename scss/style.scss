@@ -334,7 +334,7 @@ fieldset {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -389,8 +389,8 @@ fieldset {
     background: rgba(0, 0, 0, 0.20);
     border-bottom: 1px solid #DADADA;
     height: 80px;
-    position: sticky;
     width: 100%;
+    position: absolute;
     top: 0;
     z-index: 10;
 
@@ -419,6 +419,7 @@ fieldset {
 
     &__info {
         color: white;
+        display: block;
     }
 
     &__links {
@@ -628,18 +629,7 @@ fieldset {
     transition: .3s all;
 }
 
-body {
-    height: 200vh;
-}
-
 .hero {
-
-    &__wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
 
     &__slider {}
 
@@ -672,10 +662,6 @@ body {
         z-index: 1;
 
     }
-
-    // &__slider-right {
-    //     height: 100%;
-    // }
 
     &__slide-logo {}
 
@@ -753,3 +739,50 @@ body {
         bottom: 225px;
     }
 }
+
+
+.catalog {
+
+    &__wrapper {}
+
+    &__products {}
+
+    &__product {}
+}
+
+.container {}
+
+.title {
+
+    &__count {}
+
+    &__text {}
+}
+
+.product {
+
+    &__image {}
+
+    &__type {}
+
+    &__title {}
+
+    &__price {}
+}
+
+.product-big {
+
+    &__image {}
+
+    &__block {}
+
+    &__text {}
+
+    &__title {}
+
+    &__descr {}
+
+    &__button {}
+}
+
+.button-white {}

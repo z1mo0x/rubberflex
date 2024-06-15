@@ -28,7 +28,8 @@ window.addEventListener("DOMContentLoaded", () => {
                 el: ".hero__slider-pagination",
                 type: "fraction",
             },
-
+            parallax: true,
+            speed: 500,
             navigation: {
                 nextEl: ".hero__slider-next",
                 prevEl: ".hero__slider-prev",
