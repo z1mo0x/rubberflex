@@ -114,4 +114,29 @@ window.addEventListener("DOMContentLoaded", () => {
 
     heroSlider();
     companySlider();
+
+
+    //up-button Подъем вверх
+    const upButton = document.querySelector('.up-button');
+
+    window.addEventListener('DOMContentLoaded', () => {
+        if (window.scrollY < 300) {
+            upButton.style.opacity = '0';
+        } else {
+            upButton.style.opacity = '1';
+        }
+    })
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY < 300) {
+            upButton.style.opacity = '0';
+        } else {
+            upButton.style.opacity = '1';
+        }
+    })
+
+    upButton.onclick = () => {
+        window.scrollTo(0, 0);
+    }
+
 });
