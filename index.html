@@ -39,6 +39,24 @@
             </div>
         </div>
     </header>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="header-mobile__wrapper">
+                <div class="header-mobile__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__details">
+                    <a href="mailto:example@mail.ru" class="header__info">example@mail.ru</a>
+                    <a href="tel:+79000000000" class="header__info">+7 (900) 000 00 00</a>
+                </div>
+                <a href="#" class="header-mobile__profile">
+                    <img src="img/profile-circle.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
     <aside class="sidebar">
         <div class="sidebar__wrapper">
             <div class="sidebar__block">
@@ -64,7 +82,7 @@
                     <img src="img/sidebar-logo.png" alt="">
                 </a>
             </div>
-            <div class="sidebar__line"></div>
+            <div class="sidebar__line sidebar__line-second"></div>
             <div class="sidebar__block">
                 <div class="sidebar__button">
                     <button data-fancybox="" data-src="#consult" class="button">Бесплатная консультация</button>
@@ -84,26 +102,45 @@
                     <img src="img/logo.svg" alt="">
                 </a>
                 <ul class="menu__nav">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Каталог</a></li>
+                    <li><a href="#">Главная</a></li>
                     <li class="menu__downtoggle">
-                        <a href="">Готовые решения</a>
+                        <a href="#">Каталог</a>
+                        <div class="menu__toggle-button">
+                            <img src="img/menu-toggle.png" alt="">
+                        </div>
                         <div class="menu__downbackground">
+                            <div class="menu__downmenu-close"><img src="img/close.png" alt=""></div>
                             <ul class="menu__downmenu">
-                                <li><a href="">Зеленая кровля</a></li>
-                                <li><a href="">Классическая кровля</a></li>
-                                <li><a href="">Террасная доска</a></li>
-                                <li><a href="">Плитка, камень, брусчатка</a></li>
-                                <li><a href="">Стилобат</a></li>
-                                <li><a href="">Балластаная кровля</a></li>
+                                <li><a href="#">Продукт 1</a></li>
+                                <li><a href="#">Продукт 2</a></li>
+                                <li><a href="#">Продукт 3</a></li>
+                                <li><a href="#">Продукт 4</a></li>
+                                <li><a href="#">Продукт 5</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="">О компании</a></li>
-                    <li><a href="">Наши работы</a></li>
-                    <li><a href="">Вопрос-ответ</a></li>
-                    <li><a href="">Новости</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li class="menu__downtoggle">
+                        <a href="#">Готовые решения</a>
+                        <div class="menu__toggle-button">
+                            <img src="img/menu-toggle.png" alt="">
+                        </div>
+                        <div class="menu__downbackground">
+                            <div class="menu__downmenu-close"><img src="img/close.png" alt=""></div>
+                            <ul class="menu__downmenu">
+                                <li><a href="#">Зеленая кровля</a></li>
+                                <li><a href="#">Классическая кровля</a></li>
+                                <li><a href="#">Террасная доска</a></li>
+                                <li><a href="#">Плитка, камень, брусчатка</a></li>
+                                <li><a href="#">Стилобат</a></li>
+                                <li><a href="#">Балластаная кровля</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
 
@@ -173,7 +210,7 @@
     </section>
     <section class="catalog">
         <div class="container">
-            <img class="catalog__bg" src="img/catalog-bg.png" alt="">
+            <!-- <img class="catalog__bg" src="img/catalog-bg.png" alt=""> -->
             <div class="title">
                 <div class="title__count">01</div>
                 <div class="title__text">Каталог</div>
@@ -268,28 +305,31 @@
                     <div class="swiper company__slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide company__slide">
-                                <img src="img/company-slider.png" alt="">
+                                <a href="#" data-fancybox="gallery"> <img src="img/company-slider.png" alt=""></a>
                                 <div class="company__slide-block">
                                     <div class="company__slide-text">Подпись к фото</div>
                                     <div class="company__slide-city">Город</div>
                                 </div>
                             </div>
                             <div class="swiper-slide company__slide">
-                                <img src="img/company-slider.png" alt="">
+                                <a href="#" data-fancybox="gallery"> <img src="img/company-slider.png" alt=""></a>
+
                                 <div class="company__slide-block">
                                     <div class="company__slide-text">Подпись к фото</div>
                                     <div class="company__slide-city">Сочи</div>
                                 </div>
                             </div>
                             <div class="swiper-slide company__slide">
-                                <img src="img/company-slider.png" alt="">
+                                <a href="#" data-fancybox="gallery"> <img src="img/company-slider.png" alt=""></a>
+
                                 <div class="company__slide-block">
                                     <div class="company__slide-text">Подпись к фото</div>
                                     <div class="company__slide-city">Краснодар</div>
                                 </div>
                             </div>
                             <div class="swiper-slide company__slide">
-                                <img src="img/company-slider.png" alt="">
+                                <a href="#" data-fancybox="gallery"> <img src="img/company-slider.png" alt=""></a>
+
                                 <div class="company__slide-block">
                                     <div class="company__slide-text">Подпись к фото</div>
                                     <div class="company__slide-city">Новороссийск</div>
@@ -423,7 +463,7 @@
     </section>
     <section class="news">
         <div class="container">
-            <img src="img/texture-2.png" alt="" class="news__bg">
+            <!-- <img src="img/texture-2.png" alt="" class="news__bg"> -->
             <div class="news__wrapper">
                 <div class="news__info">
                     <div class="title">
@@ -435,7 +475,7 @@
                 </div>
                 <div class="news__items">
                     <div class="news__item">
-                        <div class="news__item-image"><img src="img/news-1.png" alt=""></div>
+                        <a href="#" class="news__item-image"><img src="img/news-1.png" alt=""></a>
                         <div class="news__item-block">
                             <div class="news__item-text">
                                 <div class="news__item-title">Объект сдан!</div>
@@ -447,7 +487,7 @@
                         </div>
                     </div>
                     <div class="news__item">
-                        <div class="news__item-image"><img src="img/news-1.png" alt=""></div>
+                        <a href="#" class="news__item-image"><img src="img/news-1.png" alt=""></a>
                         <div class="news__item-block">
                             <div class="news__item-text">
                                 <div class="news__item-title">Объект сдан!</div>
@@ -489,15 +529,15 @@
                     </div>
                 </div>
                 <div class="contacts__socials">
-                    <div class="contacts__social">
+                    <a href="#" class="contacts__social">
                         <img src="img/vk.png" alt="">
-                    </div>
-                    <div class="contacts__social">
+                    </a>
+                    <a href="#" class="contacts__social">
                         <img src="img/tg.png" alt="">
-                    </div>
-                    <div class="contacts__social">
+                    </a>
+                    <a href="#" class="contacts__social">
                         <img src="img/wa.png" alt="">
-                    </div>
+                    </a>
                 </div>
                 <div class="contacts__button button">Бесплатная консультация</div>
             </div>
@@ -512,9 +552,9 @@
         <div class="container">
             <div class="footer__top">
                 <div class="footer__logo">
-                    <div class="footer__logo-image">
+                    <a href="#" class="footer__logo-image">
                         <img src="img/footer-logo.png" alt="">
-                    </div>
+                    </a>
                     <div class="footer__logo-text">Рулонные кровельные гидроизоляционные мембраны</div>
                 </div>
                 <ul class="footer__list">
@@ -544,22 +584,28 @@
                 <div class="footer__info">
                     <p>Написать нам</p>
                     <div class="footer__socials">
-                        <img src="img/vk.png" alt="">
-                        <img src="img/tg.png" alt="">
-                        <img src="img/wa.png" alt="">
+                        <a href="#">
+                            <img src="img/vk.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/tg.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/wa.png" alt="">
+                        </a>
                     </div>
                 </div>
                 <div class="footer__info">
                     <p>E-mail</p>
-                    <div class="footer__info-text">
+                    <a href="mailto:info@yutastroy.ru" class="footer__info-text">
                         info@yutastroy.ru
-                    </div>
+                    </a>
                 </div>
                 <div class="footer__info">
                     <p>Телефон</p>
-                    <div class="footer__info-text">
+                    <a href="tel:+79057550690" class="footer__info-text">
                         +7 (905) 755-06-90
-                    </div>
+                    </a>
                 </div>
                 <div class="footer__info">
                     <p>Работаем</p>

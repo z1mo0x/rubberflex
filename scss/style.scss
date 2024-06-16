@@ -415,7 +415,9 @@ fieldset {
 .up-button {
     position: fixed;
     left: 90%;
-    z-index: 10;
+    width: 70px;
+    height: 70px;
+    z-index: 12;
     bottom: 10%;
     cursor: pointer;
     transition: all .3s;
@@ -485,6 +487,10 @@ fieldset {
     }
 }
 
+.header-mobile {
+    display: none;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -547,7 +553,6 @@ fieldset {
 
 .menu {
     transition: all .7s;
-    background: white;
     z-index: 10;
     width: 310px;
     position: fixed;
@@ -557,35 +562,38 @@ fieldset {
 
     &__wrapper {
         padding: 15px 15px 55px 35px;
+        background: white;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        position: relative;
         gap: 40px;
     }
 
     &__close {
         display: flex;
         position: absolute;
-        top: 15px;
-        right: 15px;
+        top: 25px;
+        right: 25px;
         cursor: pointer;
         justify-content: flex-end;
     }
 
     &__nav {
         display: grid;
-        gap: 40px;
         height: max-content;
         margin-top: 45px;
 
         a {
+            display: block;
             color: #201E1E;
             font-size: 20px;
             font-weight: 600;
             line-height: 130%;
             transition: all .3s;
+            padding: 20px 0;
 
             &:hover {
                 color: #004F3D;
@@ -609,29 +617,60 @@ fieldset {
         line-height: 130%;
     }
 
+    &__toggle-button {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        width: 25%;
+    }
+
     &__downtoggle {
-        &>a {
+        display: flex;
+        align-items: center;
+
+        img {
+            padding: 0 20px;
+        }
+
+        li {
+            width: max-content;
+            word-break: keep-all;
+        }
+
+        >a {
             position: relative;
-            width: 100%;
-
-            &::after {
-                content: url('../img/menu-toggle.png');
-                position: absolute;
-                right: -30px;
-                height: 100%;
-                top: 50%;
-                transform: translateY(-50%);
-            }
+            width: 75%;
+            display: block;
         }
 
-        &:hover .menu__downbackground {
-            transition: all .2s;
-            left: 100%;
+        // &:hover .menu__downbackground {
+        //     transition: all .3s;
+        //     left: calc(100% - 15px);
+        //     opacity: 1;
+        //     transform: scaleX(1);
+        //     pointer-events: all;
+        //     visibility: visible;
+        //     z-index: 0;
+        // }
+
+        .second-lvl {
+            transition: all .3s;
+            left: calc(100% - 15px);
             opacity: 1;
+            transform: scaleX(1);
+            pointer-events: all;
             visibility: visible;
+            z-index: 0;
         }
 
 
+    }
+
+    &__downmenu-close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
     }
 
     &__downbackground {
@@ -640,23 +679,24 @@ fieldset {
         align-items: center;
         background: white;
         border-left: 1px solid #C1C1C1;
-        transition: all .2s;
-        left: -100%;
+        transition: all .3s;
+        left: calc(100% - 15px);
+        pointer-events: none;
         top: 0;
         opacity: 0;
         visibility: hidden;
         height: 100vh;
         width: 350px;
         position: absolute;
-        z-index: 1;
+        transform: scaleX(0);
+        transform-origin: 0 0;
     }
 
     &__downmenu {
         padding: 0px 25px;
-        z-index: 2;
+        position: relative;
         display: grid;
         justify-content: center;
-        gap: 40px;
         transition: all .3s;
     }
 
@@ -733,6 +773,7 @@ fieldset {
         padding: 15px;
         z-index: 2;
         width: 50px;
+        cursor: pointer;
         height: 50px;
     }
 
@@ -744,6 +785,7 @@ fieldset {
         align-items: center;
         position: relative;
         width: 50px;
+        cursor: pointer;
         height: 50px;
     }
 
@@ -778,6 +820,9 @@ fieldset {
     }
 }
 
+body {
+    background: url('../img/texture-2.png') 0 0 / cover fixed;
+}
 
 .catalog {
     position: relative;
@@ -807,11 +852,11 @@ fieldset {
 .product {
 
     &__image {
-        border-radius: 50px 50px 0 50px;
-        overflow: hidden;
-        width: 100%;
+        display: block;
+        // width: 100%;
 
         img {
+            border-radius: 30px 30px 0 30px;
             width: 100%;
         }
     }
@@ -830,6 +875,7 @@ fieldset {
     }
 
     &__title {
+        display: block;
         margin-top: 13px;
         color: var(--black, #201E1E);
         font-size: 20px;
@@ -850,9 +896,14 @@ fieldset {
 
 .product-big {
 
-    &__image {}
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
 
     &__block {
+        margin-top: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -865,6 +916,7 @@ fieldset {
 
     &__title {
         color: var(--black, #201E1E);
+        display: block;
         font-size: 24px;
         font-weight: 600;
         line-height: 110%;
@@ -874,6 +926,7 @@ fieldset {
         color: var(--second_grey, rgba(53, 53, 53, 0.50));
         font-size: 20px;
         line-height: 130%;
+        margin-top: 15px;
     }
 
     &__button {
@@ -929,7 +982,7 @@ fieldset {
 
     &__slide {
 
-        &>img {
+        img {
             width: 100%;
             height: 450px;
             object-fit: cover;
@@ -1219,6 +1272,8 @@ fieldset {
     }
 
     &__item-image {
+        display: block;
+
         img {
             width: 100%;
             height: 100%;
@@ -1367,7 +1422,6 @@ fieldset {
             &:first-child {
                 a {
                     font-weight: 600;
-
                 }
             }
 
@@ -1378,6 +1432,12 @@ fieldset {
             font-size: 20px;
             line-height: 130%;
             font-weight: 300;
+            transition: all .3s;
+            border-bottom: 1px solid transparent;
+
+            &:hover {
+                border-bottom: 1px solid white;
+            }
 
         }
     }
@@ -1390,6 +1450,10 @@ fieldset {
             font-size: 20px;
             line-height: 130%;
         }
+
+        a {
+            display: block;
+        }
     }
 
     &__socials {
@@ -1398,6 +1462,7 @@ fieldset {
         gap: 15px;
 
         img {
+
             filter: grayscale(1) brightness(5);
         }
     }
@@ -1439,6 +1504,498 @@ fieldset {
             color: rgba(255, 255, 255, 0.4);
             border-bottom: 1px solid rgba(255, 255, 255, 0.4);
             padding-bottom: 3px;
+        }
+    }
+}
+
+
+@media (max-height:900px) {
+    .sidebar {
+        &__logo {
+            display: none;
+        }
+
+        &__line-second {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:1700px) {
+    .header {
+        &__wrapper {
+
+            padding-left: 150px;
+        }
+
+        &__button {
+            display: none;
+        }
+    }
+
+    .container {
+        padding: 0 30px 0 150px;
+    }
+
+
+    .contacts__wrapper {
+        padding-left: 150px;
+    }
+
+    .catalog {
+        &__products {
+            gap: 50px;
+        }
+    }
+
+    .advantages {
+        &__item-title {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+
+}
+
+@media (max-width:1350px) {
+
+
+    .hero {
+        &__slider {
+            height: 100vh;
+        }
+
+        &__slide-image {
+            height: 100%;
+
+        }
+
+        &__slide-title {
+            margin-top: 50px;
+            font-size: 38px;
+            line-height: 110%;
+        }
+
+        &__slider-controls {
+            bottom: 50px;
+            left: 150px;
+        }
+
+        &__slider-right {
+            height: 80vh;
+        }
+
+        &__slide {
+            .container {
+                margin-top: 150px;
+            }
+        }
+    }
+
+    .catalog {
+        margin-top: 150px;
+    }
+
+    .company {
+
+        &__wrapper {
+            gap: 50px;
+        }
+
+
+        &__descr {
+            margin-top: 30px;
+        }
+
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    .trust {
+        &__text {
+            font-size: 34px;
+        }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .up-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantages {
+        &__title {
+            font-size: 34px;
+        }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .consultation {
+        &__wrapper {
+            gap: 30px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            gap: 30px;
+        }
+
+        &__items {
+            gap: 30px;
+        }
+    }
+
+    .news {
+        &__text {
+            font-size: 34px;
+        }
+
+        &__wrapper {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+    .footer {
+
+        &__top {
+            gap: 40px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &__info-text {
+            font-size: 18px;
+        }
+
+    }
+}
+
+@media (max-width:1200px) {
+    .container {
+        padding: 0 30px 0 120px;
+    }
+
+    .header {
+        &__wrapper {
+            padding-left: 120px;
+        }
+
+        &__details {
+            display: none;
+        }
+    }
+
+    .hero {
+
+        &__slide {
+            .container {
+                gap: 25px;
+            }
+        }
+
+        &__slide-title {
+            font-size: 28px;
+        }
+
+        &__slide-text {
+            font-size: 18px;
+        }
+    }
+
+    .product-big {
+        &__text {
+            width: unset;
+        }
+    }
+
+    .company {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__button {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        &__slider-wrap {
+            width: 100%;
+        }
+
+        &__slide {
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .consultation {
+        &__wrapper {
+            padding: 50px 0;
+        }
+    }
+
+    .news {
+        &__item-title {
+            font-size: 20px;
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            padding-left: 120px;
+        }
+    }
+
+    .footer {
+        &__top {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+}
+
+@media (max-width:992px) {
+
+
+    .catalog,
+    .advantages,
+    .news,
+    .company,
+    .consultation,
+    .contacts,
+    .footer {
+        margin-top: 100px;
+    }
+
+    .header {
+        display: none;
+
+        &__details {
+            display: block;
+        }
+
+    }
+
+    .header-mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        background: rgba(0, 0, 0, 0.20);
+        backdrop-filter: blur(5px);
+
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__profile {
+            border: 1px solid #C1C1C1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+        }
+
+        &__logo {
+            height: 60px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        &__menu {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            background: white;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            span {
+                background: #004F3D;
+                width: 50%;
+                height: 3px;
+                border-radius: 2px;
+            }
+
+        }
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero {
+        &__slide-title {
+            font-size: 24px;
+        }
+
+        &__slide {
+            .container {
+                grid-template-columns: 1.5fr 1fr;
+            }
+        }
+
+        &__slider-controls {
+            left: 30px;
+        }
+
+        &__slider-right {
+            height: 500px;
+        }
+    }
+
+    .catalog {
+        &__products {
+            gap: 25px;
+            grid-template-columns: 1fr 1fr 2fr;
+        }
+    }
+
+    .product-big {
+        width: 100%;
+
+        &__block {
+            gap: 10px;
+        }
+
+        &__title {
+            font-size: 22px;
+        }
+
+        &__descr {
+            font-size: 16px;
+        }
+    }
+
+    .product {
+        &__title {
+            font-size: 18px;
+        }
+
+        &__type {
+            margin-top: 15px;
+        }
+
+        &__price {
+            font-size: 20px;
+        }
+    }
+
+    .up-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .trust {
+        &__text {
+            text-align: right;
+            width: 50%;
+            font-size: 24px;
+        }
+    }
+
+    .button {
+        padding: 15px;
+    }
+
+    .advantages {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__text {
+            margin-top: 20px;
+        }
+    }
+
+    .consultation {
+        &__wrapper {
+            display: grid;
+            text-align: center;
+            justify-items: center;
+            align-content: center;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .news {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        &__items {
+            margin-top: 50px;
+        }
+
+        &__text {
+            text-align: center;
+            width: 100%;
+        }
+
+        &__button {
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            padding: 0 30px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__map {
+            height: 400px;
+        }
+    }
+
+    .footer {
+        &__logo {
+            img {
+                height: 100px;
+            }
+        }
+
+        &__top {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__list {
+            gap: 20px;
         }
     }
 }

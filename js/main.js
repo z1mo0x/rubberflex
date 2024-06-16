@@ -3,29 +3,55 @@ window.addEventListener("DOMContentLoaded", () => {
     const sidebarButton = document.querySelector('.sidebar__menu');
     const headerMenuButton = document.querySelector('.header-mobile__menu')
     const sidebarClose = document.querySelector('.menu__close');
+    const secondMenuClose = document.querySelectorAll('.menu__downmenu-close')
     const sidebarContent = document.querySelector('.menu');
+    const downMenuButtons = document.querySelectorAll('.menu__toggle-button');
+    const downMenuSecond = document.querySelectorAll('.menu__downbackground')
+
+
+    downMenuButtons.forEach((element, index) => {
+        element.addEventListener('click', () => {
+            downMenuSecond.forEach((el) => {
+                if (el.classList.contains('second-lvl')) {
+                    el.classList.remove('second-lvl');
+                }
+            })
+            downMenuSecond[index].classList.toggle('second-lvl')
+            secondMenuClose[index].addEventListener('click', (e) => {
+                e.stopPropagation();
+                downMenuSecond[index].classList.remove('second-lvl')
+            })
+        })
+    });
+
 
     sidebarButton.addEventListener('click', () => {
         sidebarContent.classList.toggle('menu-active');
     })
 
+
+
     sidebarClose.addEventListener('click', () => {
         sidebarContent.classList.toggle('menu-active');
+        downMenuSecond.forEach((el) => {
+            if (el.classList.contains('second-lvl')) {
+                el.classList.remove('second-lvl');
+            }
+        })
     })
 
-    // if (window.screenX < 993) {
-    //     headerMenuButton.addEventListener('click', () => {
-    //         sidebarContent.classList.toggle('menu-active');
-    //     })
-    // }
+
+    if (window.screen.width < 993) {
+        headerMenuButton.addEventListener('click', () => {
+            sidebarContent.classList.toggle('menu-active');
+        })
+    }
 
 
-    //maskphone 
     //maskphone 
     var inputElements = document.querySelectorAll(".maskphone");
 
     for (let inputElement of inputElements) {
-        console.log(inputElement);
 
         inputElement.addEventListener("input", mask);
         inputElement.addEventListener("focus", mask);
@@ -100,9 +126,6 @@ window.addEventListener("DOMContentLoaded", () => {
             pagination: {
                 el: ".company__pagination",
             },
-
-
-            speed: 500,
 
             navigation: {
                 nextEl: ".company-next",
