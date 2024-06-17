@@ -138,6 +138,12 @@ window.addEventListener("DOMContentLoaded", () => {
     heroSlider();
     companySlider();
 
+    //popup close button 
+
+    $('.popup__close').onclick = () => fancybox.close()
+
+    // end popup close button 
+
 
     //up-button Подъем вверх
     const upButton = document.querySelector('.up-button');

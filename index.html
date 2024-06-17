@@ -33,9 +33,9 @@
                 <a href="" class="header__button button-white">
                     Для профессионалов
                 </a>
-                <a href="" class="header__button button">
+                <button data-src="#order" data-fancybox="" class="header__button button">
                     Оставить заявку
-                </a>
+                </button>
             </div>
         </div>
     </header>
@@ -545,7 +545,8 @@
                         <img src="img/wa.png" alt="">
                     </a>
                 </div>
-                <div class="contacts__button button">Бесплатная консультация</div>
+                <button data-src="#consult" data-fancybox="" class="contacts__button button">Бесплатная
+                    консультация</button>
             </div>
             <div class="contacts__map">
                 <iframe
@@ -632,6 +633,86 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="consult">
+        <div class="popup__wrapper">
+            <div data-fancybox-close class="popup__close"><img src="img/close.png" alt=""></div>
+            <div class="popup__image">
+                <img src="img/popup-1.png" alt="">
+            </div>
+            <div class="popup__block">
+                <div class="popup__title">Бесплатная консультация</div>
+                <div class="popup__descr">Перезвоним вам в течение часа и ответим на все вопросы.</div>
+                <div class="popup__form">
+                    <input type="text" class="popup__input" placeholder="Ваше имя">
+                    <input type="tel" class="popup__input maskphone" placeholder="+7 (9--) --- -- --">
+                    <button class="popup__button button">Отправить</button>
+                    <div class="popup__form-checkbox">
+                        <label for="consultCheck">
+                            <input type="checkbox" checked id="consultCheck" value="Y">
+                            <span class="popup__form-label">Я подтверждаю согласие на
+                                <a href="">обработку моих персональных данных</a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-order" id="order">
+        <div class="popup-order__wrapper">
+            <div data-fancybox-close class="popup__close"><img src="img/close.png" alt=""></div>
+            <div class="popup__block">
+                <div class="popup__title">Бесплатная консультация</div>
+                <div class="popup__descr">Перезвоним вам в течение часа и ответим на все вопросы.</div>
+                <div class="popup__form">
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Услуга*</div>
+                        <div class="popup-order__item-input">
+                            <select class="popup__input popup-order__select" name="" id="">
+                                <option value="">Кровля под ключ</option>
+                                <option value="">Кровля под замок</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Ваше имя*</div>
+                        <div class="popup-order__item-input">
+                            <input type="text" class="popup__input" placeholder="Иван Иванов">
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Телефон*</div>
+                        <div class="popup-order__item-input">
+                            <input type="tel" class="popup__input maskphone" placeholder="+7 (9--) --- -- --">
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Электронная почта</div>
+                        <div class="popup-order__item-input">
+                            <input type="mail" class="popup__input" placeholder="example@mail.ru">
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Комментарий</div>
+                        <div class="popup-order__item-input popup-order__item-textarea">
+                            <img class="popup-order__icon" src="img/paperclip.png" alt="">
+                            <textarea type="mail" class="popup__input" placeholder="Введите текст..."></textarea>
+                        </div>
+                    </div>
+                    <button class="popup__button button">Отправить</button>
+                    <div class="popup__form-checkbox">
+                        <label for="consultCheck">
+                            <input type="checkbox" checked id="consultCheck" value="Y">
+                            <span class="popup__form-label">Я подтверждаю согласие на
+                                <a href="">обработку моих персональных данных</a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="js/jquery-3.7.1.js"></script>
