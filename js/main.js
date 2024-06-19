@@ -27,6 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     sidebarButton.addEventListener('click', () => {
         sidebarContent.classList.toggle('menu-active');
+
     })
 
 
@@ -38,14 +39,39 @@ window.addEventListener("DOMContentLoaded", () => {
                 el.classList.remove('second-lvl');
             }
         })
+        if (window.screen.width < 450) {
+            document.documentElement.classList.remove('off-scroll')
+        }
     })
 
 
     if (window.screen.width < 993) {
         headerMenuButton.addEventListener('click', () => {
             sidebarContent.classList.toggle('menu-active');
+            if (window.screen.width < 450) {
+                document.documentElement.classList.add('off-scroll')
+            }
         })
+
     }
+
+    // tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs  tabs tabs 
+
+
+    $(function () {
+        $("#tabs").tabs({
+            hide: { effect: "slide", duration: 300 },
+            show: { effect: "slide", duration: 300 },
+            active: '#tabs-1'
+        });
+
+        $("#docTabs").tabs({
+            hide: { effect: "fade", duration: 300 },
+            show: { effect: "fade", duration: 300 },
+            active: '#docTabs-1'
+        });
+    });
+
 
 
     //maskphone 

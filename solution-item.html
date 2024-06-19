@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <ul class="header__menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Готовые решения</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Работы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="header__details">
+                <a href="mailto:example@mail.ru" class="header__info">example@mail.ru</a>
+                <a href="tel:+79000000000" class="header__info">+7 (900) 000 00 00</a>
+            </div>
+            <div class="header__links">
+                <a href="#" class="header__profile">
+                    <img src="img/profile-circle.png" alt="">
+                </a>
+                <a href="" class="header__button button-white">
+                    Для профессионалов
+                </a>
+                <button data-src="#order" data-fancybox="" class="header__button button">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="header-mobile">
+        <div class="container">
+            <div class="header-mobile__wrapper">
+                <div class="header-mobile__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__details">
+                    <a href="mailto:example@mail.ru" class="header__info">example@mail.ru</a>
+                    <a href="tel:+79000000000" class="header__info">+7 (900) 000 00 00</a>
+                </div>
+                <a href="#" class="header-mobile__profile">
+                    <img src="img/profile-circle.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <div class="sidebar__wrapper">
+            <div class="sidebar__block">
+                <div class="sidebar__menu">
+                    <img src="img/sidebar-menu.png" alt="">
+                </div>
+                <a href="#" class="sidebar__search">
+                    <img src="img/search.png" alt="">
+                </a>
+                <a href="#" class="sidebar__icon">
+                    <img src="img/wa.png" alt="">
+                </a>
+                <a href="#" class="sidebar__icon">
+                    <img src="img/tg.png" alt="">
+                </a>
+                <a href="#" class="sidebar__icon">
+                    <img src="img/vk.png" alt="">
+                </a>
+            </div>
+            <div class="sidebar__line"></div>
+            <div class="sidebar__block">
+                <a href="/" class="sidebar__logo">
+                    <img src="img/sidebar-logo.png" alt="">
+                </a>
+            </div>
+            <div class="sidebar__line sidebar__line-second"></div>
+            <div class="sidebar__block">
+                <div class="sidebar__button">
+                    <button data-fancybox="" data-src="#consult" class="button">Бесплатная консультация</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </aside>
+    <div class="menu">
+        <div class="menu__wrapper">
+            <div class="menu__close">
+                <img src="img/close.png" alt="">
+            </div>
+            <div class="menu-top">
+                <a href="/" class="menu__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <ul class="menu__nav">
+                    <li><a href="#">Главная</a></li>
+                    <li class="menu__downtoggle">
+                        <a href="#">Каталог</a>
+                        <div class="menu__toggle-button">
+                            <img src="img/menu-toggle.png" alt="">
+                        </div>
+                        <div class="menu__downbackground">
+                            <a href="#">Каталог</a>
+                            <div class="menu__downmenu-close"><img src="img/close.png" alt=""></div>
+                            <ul class="menu__downmenu">
+                                <li><a href="#">Продукт 1</a></li>
+                                <li><a href="#">Продукт 2</a></li>
+                                <li><a href="#">Продукт 3</a></li>
+                                <li><a href="#">Продукт 4</a></li>
+                                <li><a href="#">Продукт 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu__downtoggle">
+                        <a href="#">Готовые решения</a>
+                        <div class="menu__toggle-button">
+                            <img src="img/menu-toggle.png" alt="">
+                        </div>
+                        <div class="menu__downbackground">
+                            <a href="#">Готовые решения</a>
+                            <div class="menu__downmenu-close"><img src="img/close.png" alt=""></div>
+                            <ul class="menu__downmenu">
+                                <li><a href="#">Зеленая кровля</a></li>
+                                <li><a href="#">Классическая кровля</a></li>
+                                <li><a href="#">Террасная доска</a></li>
+                                <li><a href="#">Плитка, камень, брусчатка</a></li>
+                                <li><a href="#">Стилобат</a></li>
+                                <li><a href="#">Балластаная кровля</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="menu__info">
+                <a href="mailto:example@mail.ru" class="menu__info-block">
+                    <img src="img/mail-icon.png" alt="">
+                    example@mail.ru
+                </a>
+                <a href="tel:+7900000000" class="menu__info-block"><img src="img/phone-icon.png" alt="">+7 (900) 000 00
+                    00</a>
+            </div>
+        </div>
+    </div>
+    <img class="up-button" src="img/up-buton.png" alt="">
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <ul class="breadcrumbs__items">
+                <li class="breadcrumbs__item">Главная</li>
+                <li class="breadcrumbs__item">Готовые решения</li>
+                <li class="breadcrumbs__item">Террасная доска</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="solution-item">
+        <div class="container">
+            <div class="solution-item__wrapper">
+                <div class="solution-item__block">
+                    <a href="#" data-fancybox="" data-src="img/solution-item.png" class="solution-item__image">
+                        <img src="img/solution-item.png" alt="">
+                    </a>
+                    <div class="solution-item__text">
+                        <div class="solution-item__title">Террасная доска</div>
+                        <div class="solution-item__descr">
+                            Один из распространенных вариантов устройства финишного покрытия эксплуатируемых кровель, а
+                            также террас, балконов и прочих прогулочных/эксплуатируемых участков свободного пространства
+                            – террасная доска. В обиходе существуют и иные названия подобного способа создания покрытия:
+                            палуба, дощатый настил. Однако сути это не меняет. Покрытие представляет собой штучные
+                            элементы (как правило, отдельные доски или рейки), которые, собственно, и являются
+                            эксплуатируемым покрытием.
+                        </div>
+                        <div class="solution-item__attention">Цена приведенная ниже указана за материалы с работами.
+                            Были взяты в расчет средние показатели цен, с учетом применения гидроизоляционных мембран
+                            Резитрикс®.</div>
+                        <div class="solution-item__bottom">
+                            <div class="solution-item__price">
+                                от <span>15 000</span> руб/m2
+                            </div>
+                            <div class="solution-item__button">
+                                <button class="button-white">Заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" data-fancybox="" data-src="img/solution-item-big.png" class="solution-item__big-image">
+                    <img src="img/solution-item-big.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tabs">
+        <div class="container">
+            <div id="tabs" class="tabs__wrapper">
+                <ul class="tabs__list">
+                    <li><a href="#tabs-1" class="tabs__title">ШАГ 1. ОБЩЕЕ ОПИСАНИЕ</a></li>
+                    <li><a href="#tabs-2" class="tabs__title">ШАГ 2. ПРОЕКТИРОВАНИЕ</a></li>
+                    <li><a href="#tabs-3" class="tabs__title">ШАГ 3. ПРОИЗВОДСТВО РАБОТ</a></li>
+                    <li>
+                        <a href="#tabs-4" class="tabs__title">
+                            ШАГ 4. ПРОВЕРКА КВАЛИФИКАЦИИ ИСПОЛНИТЕЛЕЙ И ИХ ВЫБОР
+                        </a>
+                    </li>
+                    <li><a href="#tabs-5" class="tabs__title">ШАГ 5. ЭКСПЛУАТАЦИЯ ТЕРРАСНЫХ НАСТИЛОВ</a></li>
+                </ul>
+                <ul class="tabs__title__content">
+                    <li class="tabs__info" id="tabs-1">
+                        <div class="tabs__block">
+                            <div class="tabs__item-title">Дизайн</div>
+                            <p>С точки зрения дизайна, покрытие может быть разных цветов, выполненное с уклонами и без,
+                                различной фактуры и т.д. В силу использования досок как штучных элементов внешний вид
+                                итогового покрытия будет так или иначе напоминать паркет, а закругленные элементы можно
+                                реализовать только сегментами.</p>
+                            <img src="img/design-image.jpg" alt="">
+                            <p>Еще один важный декоративный и эксплуатационный параметр – уклон готового покрытия. Если
+                                не
+                                задумываться об этом, то покрытие будет просто повторять профиль кровли со всеми
+                                уклонами.
+                                Однако, предпочтительнее предусмотреть горизонтальное покрытие, которое более удобно в
+                                эксплуатации и к которому все привыкли. Тем не менее, согласно требованиям
+                                производителей, к
+                                монтажу террасной доски, не всякую доску возможно монтировать подобным образом. То есть,
+                                если Вы хотите горизонтальное покрытие, необходимо выбрать доску, позволяющую этот
+                                способ
+                                монтажа.</p>
+                            <p>Дощатый настил на эксплуатируемых кровлях или в иных открытых местах должен пропускать
+                                через
+                                себя дождевую воду. Для этого доски укладываются с продольными зазорами. С одной
+                                стороны,
+                                большой зазор — хороший дренаж, не забивается мусором, с другой стороны, – возможный
+                                травматизм при попадании женского каблука. Обычно величина зазора в дощатых настилах
+                                составляет 2-5 мм. Однако при монтаже настила стоит учитывать сезон работ, температуру и
+                                коэффициент линейного расширения досок каждого типа.</p>
+                        </div>
+                    </li>
+                    <li class="tabs__info" id="tabs-2">
+                        <div class="tabs__block">
+                            <img src="img/tab-2-image.png" alt="">
+                            <p>Самая сложная зона при монтаже террасного настила – примыкания к вертикальным
+                                поверхностям: стенам, парапетам, шахтам и т.д. Даже при идеальном распиле и ровности
+                                досок, примыкающих к поверхности, со временем из-за минимальных отличий досок друг от
+                                друга края доски не представляют собой более единой линии, и это выглядит не совсем так,
+                                как хотелось бы. Для того, чтобы край настила всегда выглядел ровно, его чаще всего
+                                просто маскируют. Это делают уголком, декоративным элементом (типа решетки), фасадными
+                                элементами и т.д.</p>
+                        </div>
+                    </li>
+                    <li class="tabs__info" id="tabs-3">
+                        <div class="tabs__block">
+                            <img src="img/tab-2-image.png" alt="">
+                            <p>Самая сложная зона при монтаже террасного настила – примыкания к вертикальным
+                                поверхностям: стенам, парапетам, шахтам и т.д. Даже при идеальном распиле и ровности
+                                досок, примыкающих к поверхности, со временем из-за минимальных отличий досок друг от
+                                друга края доски не представляют собой более единой линии, и это выглядит не совсем так,
+                                как хотелось бы. Для того, чтобы край настила всегда выглядел ровно, его чаще всего
+                                просто маскируют. Это делают уголком, декоративным элементом (типа решетки), фасадными
+                                элементами и т.д.</p>
+                        </div>
+                    </li>
+                    <li class="tabs__info" id="tabs-4">
+                        <div class="tabs__block">
+                            <img src="img/tab-2-image.png" alt="">
+                            <p>Самая сложная зона при монтаже террасного настила – примыкания к вертикальным
+                                поверхностям: стенам, парапетам, шахтам и т.д. Даже при идеальном распиле и ровности
+                                досок, примыкающих к поверхности, со временем из-за минимальных отличий досок друг от
+                                друга края доски не представляют собой более единой линии, и это выглядит не совсем так,
+                                как хотелось бы. Для того, чтобы край настила всегда выглядел ровно, его чаще всего
+                                просто маскируют. Это делают уголком, декоративным элементом (типа решетки), фасадными
+                                элементами и т.д.</p>
+                        </div>
+                    </li>
+                    <li class="tabs__info" id="tabs-5">
+                        <div class="tabs__block">
+                            <img src="img/tab-2-image.png" alt="">
+                            <p>Самая сложная зона при монтаже террасного настила – примыкания к вертикальным
+                                поверхностям: стенам, парапетам, шахтам и т.д. Даже при идеальном распиле и ровности
+                                досок, примыкающих к поверхности, со временем из-за минимальных отличий досок друг от
+                                друга края доски не представляют собой более единой линии, и это выглядит не совсем так,
+                                как хотелось бы. Для того, чтобы край настила всегда выглядел ровно, его чаще всего
+                                просто маскируют. Это делают уголком, декоративным элементом (типа решетки), фасадными
+                                элементами и т.д.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="documents">
+        <div class="container">
+            <div class="documents__wrapper" id="docTabs">
+                <ul class="documents__titles">
+                    <li><a href="#docTabs-1" class="documents__title">Документы</a></li>
+                    <li><a href="#docTabs-2" class="documents__title">Чертежи</a></li>
+                </ul>
+                <ul class="documents__info">
+                    <li id="docTabs-1">
+                        <div class="documents__items">
+                            <a href="#" download class="documents__item">
+                                <img src="img/doc-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/xls-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/pdf-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/jpg-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/png-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                        </div>
+                        <a href="#" download class="documents__button button-white">Скачать все документы
+                            <span> (4,01 MB)</span>
+                        </a>
+                    </li>
+                    <li id="docTabs-2">
+                        <div class="documents__items">
+                            <a href="#" download class="documents__item">
+                                <img src="img/doc-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/xls-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/pdf-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/jpg-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                            <a href="#" download class="documents__item">
+                                <img src="img/png-document.png" alt="">
+                                <p>Регистрация юридического лица от 01.01.2001 г.</p>
+                            </a>
+                        </div>
+                        <a href="#" download class="documents__button button-white">Скачать все чертежи
+                            <span> (4,01 MB)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section class="solution-form">
+        <div class="container">
+            <div class="solution-form__wrapper">
+                <div class="solution-form__text">
+                    <div class="solution-form__title">Получить консультацию</div>
+                    <div class="solution-form__descr">Введите ваш номер телефона</div>
+                </div>
+                <form class="solution-form__form">
+                    <input type="tel" class="maskphone" placeholder="+7 (9--) --- -- --">
+                    <button class="solution-form__button button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="#" class="footer__logo-image">
+                        <img src="img/footer-logo.png" alt="">
+                    </a>
+                    <div class="footer__logo-text">Рулонные кровельные гидроизоляционные мембраны</div>
+                </div>
+                <ul class="footer__list">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наши работы</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Кровельные мембраны</a></li>
+                    <li><a href="#">Фасадная грунтовка</a></li>
+                    <li><a href="#">Клей</a></li>
+                    <li><a href="#">Растворители</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a href="#">Готовые решения</a></li>
+                    <li><a href="#">Зеленая кровля</a></li>
+                    <li><a href="#">Классическая кровля</a></li>
+                    <li><a href="#">Террасная доска</a></li>
+                    <li><a href="#">Плитка, камень, брусчатка</a></li>
+                    <li><a href="#">Стилобат</a></li>
+                    <li><a href="#">Балластаная кровля</a></li>
+                </ul>
+                <div class="footer__info">
+                    <p>Написать нам</p>
+                    <div class="footer__socials">
+                        <a href="#">
+                            <img src="img/vk.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/tg.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/wa.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__info">
+                    <p>E-mail</p>
+                    <a href="mailto:info@yutastroy.ru" class="footer__info-text">
+                        info@yutastroy.ru
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <p>Телефон</p>
+                    <a href="tel:+79057550690" class="footer__info-text">
+                        +7 (905) 755-06-90
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <p>Работаем</p>
+                    <div class="footer__info-text">
+                        Пн — Пт 8:00 — 17:00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="footer__bottom">
+                <p>© 2024 РАББЕРФЛЕКС® RX </p>
+                <div class="footer__brevis">
+                    <img src="img/brevis.png" alt="">
+                    <p>Создание сайта - <br> <a href="https://brevis-site.ru">интернет агенство “BREVIS”</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="consult">
+        <div class="popup__wrapper">
+            <div data-fancybox-close class="popup__close"><img src="img/close.png" alt=""></div>
+            <div class="popup__image">
+                <img src="img/popup-1.png" alt="">
+            </div>
+            <div class="popup__block">
+                <div class="popup__title">Бесплатная консультация</div>
+                <div class="popup__descr">Перезвоним вам в течение часа и ответим на все вопросы.</div>
+                <div class="popup__form">
+                    <input type="text" class="popup__input" placeholder="Ваше имя">
+                    <input type="tel" class="popup__input maskphone" placeholder="+7 (9--) --- -- --">
+                    <button class="popup__button button">Отправить</button>
+                    <div class="popup__form-checkbox">
+                        <label for="consultCheck">
+                            <input type="checkbox" checked id="consultCheck" value="Y">
+                            <span class="popup__form-label">Я подтверждаю согласие на
+                                <a href="">обработку моих персональных данных</a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-order" id="order">
+        <div class="popup-order__wrapper">
+            <div data-fancybox-close class="popup__close"><img src="img/close.png" alt=""></div>
+            <div class="popup__block">
+                <div class="popup__title">Бесплатная консультация</div>
+                <div class="popup__descr">Перезвоним вам в течение часа и ответим на все вопросы.</div>
+                <div class="popup__form">
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Услуга*</div>
+                        <div class="popup-order__item-input">
+                            <select class="popup__input popup-order__select" name="" id="">
+                                <option value="">Кровля под ключ</option>
+                                <option value="">Кровля под замок</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Ваше имя*</div>
+                        <div class="popup-order__item-input">
+                            <input type="text" class="popup__input" placeholder="Иван Иванов">
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Телефон*</div>
+                        <div class="popup-order__item-input">
+                            <input type="tel" class="popup__input maskphone" placeholder="+7 (9--) --- -- --">
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Электронная почта</div>
+                        <div class="popup-order__item-input">
+                            <input type="mail" class="popup__input" placeholder="example@mail.ru">
+                        </div>
+                    </div>
+                    <div class="popup-order__item">
+                        <div class="popup-order__item-name">Комментарий</div>
+                        <div class="popup-order__item-input popup-order__item-textarea">
+                            <img class="popup-order__icon" src="img/paperclip.png" alt="">
+                            <textarea type="mail" class="popup__input" placeholder="Введите текст..."></textarea>
+                        </div>
+                    </div>
+                    <button class="popup__button button">Отправить</button>
+                    <div class="popup__form-checkbox">
+                        <label for="consultCheck">
+                            <input type="checkbox" checked id="consultCheck" value="Y">
+                            <span class="popup__form-label">Я подтверждаю согласие на
+                                <a href="">обработку моих персональных данных</a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.7.1.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>
