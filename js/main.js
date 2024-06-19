@@ -145,6 +145,13 @@ window.addEventListener("DOMContentLoaded", () => {
     // end popup close button 
 
 
+    if (window.location.pathname === '/') {
+        $('.header').addClass('header-main')
+    }
+
+
+    // console.log(navigator);
+
     //up-button Подъем вверх
     const upButton = document.querySelector('.up-button');
 

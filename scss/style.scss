@@ -426,11 +426,10 @@ fieldset {
 
 
 .header {
-    background: rgba(0, 0, 0, 0.20);
     border-bottom: 1px solid #DADADA;
     height: 80px;
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     z-index: 10;
 
@@ -438,7 +437,7 @@ fieldset {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 15vw;
+        padding-left: 13vw;
         height: 100%;
     }
 
@@ -447,7 +446,7 @@ fieldset {
         display: flex;
 
         a {
-            color: #FFF;
+            color: black;
             font-size: 15px;
             font-weight: 600;
             line-height: 130%;
@@ -475,6 +474,10 @@ fieldset {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        img {
+            filter: brightness(0);
+        }
     }
 
     &__button {
@@ -487,65 +490,20 @@ fieldset {
     }
 }
 
-.header-2 {
+.header-main {
+    background: rgba(0, 0, 0, 0.20);
     border-bottom: 1px solid #DADADA;
     height: 80px;
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
     z-index: 10;
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-left: 15vw;
-        height: 100%;
+    .header__menu a {
+        color: white;
     }
 
-    &__menu {
-        gap: 25px;
-        display: flex;
 
-        a {
-            color: black;
-            font-size: 15px;
-            font-weight: 600;
-            line-height: 130%;
-            text-decoration: none;
-        }
-    }
-
-    &__details {}
-
-    &__info {
-        color: black;
-        display: block;
-    }
-
-    &__links {
-        display: flex;
-        height: 100%;
-
-    }
-
-    &__profile {
-        border: 1px solid #C1C1C1;
-        height: 100%;
-        width: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__button {
-        border: 1px solid #C1C1C1;
-
-        &:hover {
-            border: 1px solid #C1C1C1;
-
-        }
-    }
 }
 
 .header-mobile {
@@ -1856,6 +1814,7 @@ body {
     }
 
     &__name {
+        display: block;
         margin-top: 20px;
         color: var(--black, #201E1E);
         font-size: 20px;
@@ -1872,7 +1831,77 @@ body {
 }
 
 
+.info {
 
+    h2 {
+        color: #201E1E;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.38px;
+    }
+
+    h3 {
+        color: #201E1E;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    h4 {
+        color: #201E1E;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    h5 {
+        color: #201E1E;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+    }
+
+    p {
+        color: var(--black, #201E1E);
+        font-family: "RF Dewi Extended";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 130%;
+        margin-top: 20px;
+    }
+
+    &__block {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    ul {
+        list-style: disc;
+        margin-top: 50px;
+        padding-left: 20px;
+
+        li {
+            color: var(--black, #201E1E);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+
+    ol {
+        margin-top: 50px;
+
+        padding-left: 20px;
+
+        li {
+            color: var(--black, #201E1E);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 130%;
+        }
+    }
+}
 
 
 
@@ -2187,6 +2216,9 @@ body {
 
 @media (max-width:992px) {
 
+    .breadcrumbs {
+        padding-top: 80px;
+    }
 
     .catalog,
     .advantages,
@@ -2402,6 +2434,8 @@ body {
             display: none;
         }
     }
+
+
 }
 
 @media (max-width:767px) {
@@ -2418,7 +2452,46 @@ body {
     //     }
     // }
 
+    .info {
+        &__block {
+            width: 100%;
+        }
 
+        h2 {
+            font-size: 34px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {}
+
+        h5 {}
+    }
+
+    .catalog-page {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__image img {
+            height: 200px;
+        }
+
+        &__name {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        &__title {
+            font-size: 34px;
+        }
+
+        &__price {
+            font-size: 22px;
+        }
+    }
 
     .catalog {
         &__products {
@@ -2557,6 +2630,17 @@ body {
             z-index: 10;
         }
     }
+
+    .info {
+        p {
+            font-size: 16px;
+        }
+
+        ul li,
+        ol li {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width:577px) {
@@ -2566,6 +2650,37 @@ body {
 
         &__title {
             font-size: 30px;
+        }
+    }
+
+    .info {
+        p {
+            font-size: 14px;
+        }
+
+        ul li,
+        ol li {
+            font-size: 14px;
+        }
+    }
+
+    .catalog-page {
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__name {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__price {
+            font-size: 20px;
+            margin-top: 10px;
         }
     }
 
@@ -2710,6 +2825,7 @@ body {
 }
 
 @media (max-width:450px) {
+
 
     .container {
         padding: 0 20px;
