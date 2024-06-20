@@ -344,7 +344,7 @@ fieldset {
 }
 
 .body-background {
-    background: url('../img/main-back.png');
+    background: url("../img/main-back.png") center 850px/cover fixed;
 }
 
 .button {
