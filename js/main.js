@@ -70,6 +70,12 @@ window.addEventListener("DOMContentLoaded", () => {
             show: { effect: "fade", duration: 300 },
             active: '#docTabs-1'
         });
+
+        $("#cardTabs").tabs({
+            hide: { effect: "fade", duration: 300 },
+            show: { effect: "fade", duration: 300 },
+            active: '#cardTabs-2'
+        });
     });
 
 
@@ -145,6 +151,39 @@ window.addEventListener("DOMContentLoaded", () => {
 
         });
     }
+    function cardSlider() {
+        var swiper = new Swiper(".card__thumbs", {
+            spaceBetween: 20,
+            slidesPerView: 3,
+
+
+            breakpoints: {
+                994: {
+                    slidesPerView: 3,
+                },
+                767: {
+                    slidesPerView: 2,
+                },
+                577: {
+                    slidesPerView: 3,
+                },
+                320: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+
+        var swiper2 = new Swiper(".card__slider", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".card__next",
+                prevEl: ".card__prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    }
 
     function companySlider() {
         const companySlider = new Swiper('.company__slider', {
@@ -161,20 +200,90 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function sameSlider() {
+        const sameSlider = new Swiper('.same__slider', {
+
+            slidesPerView: 4,
+            spaceBetween: 30,
+
+            navigation: {
+                nextEl: ".same__next",
+                prevEl: ".same__prev",
+            },
+
+            breakpoints: {
+                994: {
+                    slidesPerView: 4,
+                },
+                767: {
+                    slidesPerView: 3,
+                },
+                400: {
+                    slidesPerView: 2,
+                },
+                320: {
+                    slidesPerView: 1,
+                },
+            },
+
+        });
+    }
+
+    sameSlider();
     heroSlider();
     companySlider();
+    cardSlider();
 
-    //popup close button 
 
-    $('.popup__close').onclick = () => fancybox.close()
+    //video
+    try {
+        const videoButton = document.querySelector('.video__play')
+        const wrapperVideo = document.querySelector('.video__item');
 
-    // end popup close button 
+
+        videoButton.addEventListener('click', function () {
+            if (wrapperVideo.classList.contains('video__off')) {
+                wrapperVideo.play()
+                wrapperVideo.classList.remove('video__off')
+                videoButton.classList.add("video__active")
+                wrapperVideo.setAttribute('controls', '')
+            }
+            else {
+                wrapperVideo.pause()
+                wrapperVideo.classList.add('video__off')
+                videoButton.classList.remove("video__active")
+                wrapperVideo.removeAttribute('controls', '')
+            }
+        });
+    }
+    catch { }
+
+    //END video 
+
+
+
+    // изменение количества 
+    try {
+        const plusButton = document.querySelector('.popup-zakaz__plus')
+        const minusButton = document.querySelector('.popup-zakaz__minus')
+        const inputPopup = document.querySelector('.popup-zakaz__number-input')
+
+        minusButton.addEventListener('click', () => {
+            minusButton.nextElementSibling.stepDown();
+        })
+        plusButton.addEventListener('click', () => {
+            plusButton.previousElementSibling.stepUp();
+        })
+
+    } catch {
+
+    }
+    // изменение количества 
 
 
     if (window.location.pathname === '/') {
         $('.header').addClass('header-main')
     }
-
 
     // console.log(navigator);
 
