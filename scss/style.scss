@@ -343,6 +343,10 @@ fieldset {
     overflow-y: hidden;
 }
 
+.body-background {
+    background: url('../img/main-back.png');
+}
+
 .button {
     background: #004F3D;
     display: flex;
@@ -4254,6 +4258,10 @@ body {
             input {
                 font-size: 16px;
             }
+
+            textarea {
+                font-size: 16px;
+            }
         }
     }
 
@@ -4269,6 +4277,10 @@ body {
     // .button-white {
     //     width: 100%;
     // }
+
+    .popup-zakaz__block-left {
+        padding: 0;
+    }
 
     .container {
         padding: 0 20px;

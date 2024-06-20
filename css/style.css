@@ -254,6 +254,10 @@ fieldset {
   overflow-y: hidden;
 }
 
+.body-background {
+  background: url("../img/main-back.png");
+}
+
 .button {
   background: #004F3D;
   display: -webkit-box;
@@ -3536,11 +3540,17 @@ body {
   .popup-order__item-input input {
     font-size: 16px;
   }
+  .popup-order__item-input textarea {
+    font-size: 16px;
+  }
   .button {
     width: 100%;
   }
 }
 @media (max-width: 450px) {
+  .popup-zakaz__block-left {
+    padding: 0;
+  }
   .container {
     padding: 0 20px;
   }

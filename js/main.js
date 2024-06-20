@@ -282,7 +282,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
     if (window.location.pathname === '/') {
-        $('.header').addClass('header-main')
+        $('.header').addClass('header-main');
+        $('body').addClass('body-background');
     }
 
     // console.log(navigator);
