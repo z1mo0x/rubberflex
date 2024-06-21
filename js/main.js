@@ -8,8 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const downMenuButtons = document.querySelectorAll('.menu__toggle-button');
     const downMenuSecond = document.querySelectorAll('.menu__downbackground')
 
-    window.addEventListener('keydown',()=>{
-        if(key === 'esc'){
+    window.addEventListener('keydown',(e)=>{
+        if(e.key === 'esc'){
             sidebarContent.classList.toggle('menu-active')
         }
     })
