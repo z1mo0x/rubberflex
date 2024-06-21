@@ -16,10 +16,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
-            e.stopPropagation();
-            $(document).click(function (e) {
-                    sidebarContent.classList.toggle('menu-active');
-            });
             downMenuSecond.forEach((el) => {
                 if (el.classList.contains('second-lvl')) {
                     el.classList.remove('second-lvl');
