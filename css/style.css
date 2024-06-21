@@ -516,22 +516,21 @@ fieldset {
   background: #6CA195;
 }
 .sidebar__button {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
-  width: 100%;
+  display: block;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    margin-top: 100px;
 }
 .sidebar__button button {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   font-size: 20px;
   font-weight: 400;
+  width: 275px;
   padding: 20px 15px;
   line-height: 100%;
-  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3146,6 +3145,11 @@ body {
 @media (max-width: 767px) {
   .popup-zakaz__block-title {
     font-size: 18px;
+  }
+
+  .menu__wrapper{
+    height: 100vh;
+    overflow-y: auto;
   }
   .form_radio_btn label {
     font-size: 18px;
