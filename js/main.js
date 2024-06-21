@@ -21,12 +21,15 @@ window.addEventListener("DOMContentLoaded", () => {
  
     // const menu = document.querySelector('#menu');
 
-    $('body').on('click', function(e){
-        if(e.target !== $('#menu') && e.target !== $('.sidebar__menu') ){
-            $('#menu').removeClass('menu-active');
-        }
-        })
-        
+    $(function($){
+        $(document).mouseup(function (e){
+            var div = $("#menu"); 
+            if (!div.is(e.target) 
+                && div.has(e.target).length === 0) { 
+                $("#menu").removeClass('menu-active'); 
+            }
+        });
+    });
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
