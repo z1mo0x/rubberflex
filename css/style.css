@@ -3152,13 +3152,7 @@ body {
     font-size: 18px;
   }
 
-  .documents__button{
-    font-size: 16px;
-  }
 
-  .documents__button span{
-    font-size: 16px;
-  }
 
   .menu__wrapper{
     height: 100vh;
@@ -3595,11 +3589,29 @@ body {
   .button {
     width: 100%;
   }
+
+  .documents__button{
+    font-size: 16px;
+  }
+
+  .documents__button span{
+    font-size: 16px;
+  }
 }
 @media (max-width: 450px) {
   .popup-zakaz__block-left {
     padding: 0;
   }
+
+  
+  .documents__button{
+    font-size: 14px;
+  }
+
+  .documents__button span{
+    font-size: 14px;
+  }
+
   .container {
     padding: 0 20px;
   }
