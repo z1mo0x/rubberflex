@@ -426,11 +426,11 @@ fieldset {
   
 }
 
-.header__button:nth-child(1){
+.header__button:nth-child(0){
   width: 200px;
 }
 
-.header__button:nth-child(2){
+.header__button:nth-child(1){
   width: 300px;
 }
 
