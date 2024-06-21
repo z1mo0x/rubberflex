@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
  
     // const menu = document.querySelector('#menu');
 
-        $('.swiper').mouseup(function (e){
+        $(document.documentElement).mouseup(function (e){
             var div = $("#menu"); 
             if (!div.is(e.target) 
                 && div.has(e.target).length === 0) { 
