@@ -19,11 +19,12 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
  
+    const menu = document.querySelector( '#menu');
 
     $(document).mouseup( function(e){ 
-        if ( !sidebarContent.is(e.target)
-            && sidebarContent.has(e.target).length === 0 ) {
-                sidebarContent.classList.remove('menu-active');
+        if ( !menu.is(e.target)
+            && menu.has(e.target).length === 0 ) {
+                menu.classList.remove('menu-active');
         }
     });
     downMenuButtons.forEach((element, index) => {
