@@ -2218,6 +2218,7 @@ body {
 }
 .card__button button {
   width: 300px;
+  font-weight: 600;
 }
 
 .video {
