@@ -18,13 +18,14 @@ window.addEventListener("DOMContentLoaded", () => {
             })
         }
     })
-
-    $(document).mouseup(function (e) {
-        e.stopPropagation()
-        if (sidebarContent.has(e.target).length === 0){
-            sidebarContent.classList.remove('menu-active')
-        }
-    });
+ 
+        document.addEventListener( 'click', (e) => {
+            const withinBoundaries = e.composedPath().includes(sidebarContent);
+        
+            if ( ! withinBoundaries ) {
+                sidebarContent.classList.remove('menu-active') // скрываем элемент т к клик был за его пределами
+            }
+        })
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
