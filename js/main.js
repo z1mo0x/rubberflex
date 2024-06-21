@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        $('.swiper').onclick(()=>{
+        $('.swiper').click(()=>{
             $("#menu").removeClass('menu-active'); 
             downMenuSecond.forEach((el) => {
                 if (el.classList.contains('second-lvl')) {
