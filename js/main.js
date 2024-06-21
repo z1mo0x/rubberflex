@@ -11,7 +11,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
-            $(document).mouseup(function (e) {
+            e.stopPropagation();
+            $(document).click(function (e) {
                 if (sidebarContent.has(e.target).length === 0){
                     sidebarContent.classList.toggle('menu-active');
                 }
