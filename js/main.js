@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     window.addEventListener('keydown',(e)=>{
         if(e.key === 'Escape'){
-            sidebarContent.classList.toggle('menu-active')
+            sidebarContent.classList.remove('menu-active')
         }
     })
 
