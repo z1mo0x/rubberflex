@@ -11,6 +11,11 @@ window.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('keydown',(e)=>{
         if(e.key === 'Escape'){
             sidebarContent.classList.remove('menu-active')
+            downMenuSecond.forEach((el) => {
+                if (el.classList.contains('second-lvl')) {
+                    el.classList.remove('second-lvl');
+                }
+            })
         }
     })
 
