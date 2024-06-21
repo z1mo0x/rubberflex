@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const div = document.querySelector('.menu');
 
     $(document).mouseup( function(e){ 
-            if ( div !== (e.target)) {
+            if (div !== e.target) {
                 sidebarContent.classList.remove('menu-active')
         }
     });
