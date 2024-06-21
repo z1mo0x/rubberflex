@@ -3152,6 +3152,10 @@ body {
     font-size: 18px;
   }
 
+  .documents__button{
+    font-size: 16px;
+  }
+
   .menu__wrapper{
     height: 100vh;
     overflow-y: auto;
