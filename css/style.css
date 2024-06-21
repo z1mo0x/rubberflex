@@ -2230,6 +2230,7 @@ body {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   display: block;
+  height: 100%;
 }
 .video__play {
   background: none;
