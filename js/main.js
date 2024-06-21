@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const headerMenuButton = document.querySelector('.header-mobile__menu')
     const sidebarClose = document.querySelector('.menu__close');
     const secondMenuClose = document.querySelectorAll('.menu__downmenu-close')
-    const sidebarContent = document.querySelector('#menu');
+    const sidebarContent = document.querySelector('.smenu');
     const downMenuButtons = document.querySelectorAll('.menu__toggle-button');
     const downMenuSecond = document.querySelectorAll('.menu__downbackground')
 
