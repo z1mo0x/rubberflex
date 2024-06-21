@@ -414,9 +414,11 @@
                         <div class="popup-zakaz__block-info">
                             <div class="popup-order__item">
                                 <div class="popup-order__item-input popup-order__item-textarea">
-                                    <img class="popup-order__icon" src="img/paperclip.png" alt="">
-                                    <textarea type="mail" class="popup__input"
-                                        placeholder="Введите текст..."></textarea>
+                                    <label for="orderComment" class="popup-order__item-file">
+                                        <input type="file" id="orderComment">
+                                        <img class="popup-order__icon" src="img/paperclip.png" alt="">
+                                    </label>
+                                    <textarea type="mail" class="popup__input" placeholder="Введите текст..."></textarea>
                                 </div>
                             </div>
                         </div>
@@ -498,7 +500,10 @@
                     <div class="popup-order__item">
                         <div class="popup-order__item-name">Комментарий</div>
                         <div class="popup-order__item-input popup-order__item-textarea">
-                            <img class="popup-order__icon" src="img/paperclip.png" alt="">
+                            <label for="orderComment" class="popup-order__item-file">
+                                <input type="file" id="orderComment">
+                                <img class="popup-order__icon" src="img/paperclip.png" alt="">
+                            </label>
                             <textarea type="mail" class="popup__input" placeholder="Введите текст..."></textarea>
                         </div>
                     </div>
