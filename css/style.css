@@ -519,7 +519,6 @@ background: white;
 .sidebar__button {
   height: 350px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .sidebar__button button {
