@@ -22,6 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const div = document.querySelector('.menu');
 
     $(document).mouseup( function(e){ 
+            e.stopPropagation()
             if (div.is() !== e.target) {
                 sidebarContent.classList.remove('menu-active')
         }
