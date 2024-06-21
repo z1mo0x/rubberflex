@@ -21,7 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
  
     // const menu = document.querySelector('#menu');
 
-    $(function($){
         $(document).mouseup(function (e){
             var div = $("#menu"); 
             if (!div.is(e.target) 
@@ -34,7 +33,6 @@ window.addEventListener("DOMContentLoaded", () => {
                 })
             }
         });
-    });
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
