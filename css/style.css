@@ -1613,10 +1613,7 @@ body {
   margin-top: 15px;
 }
 .popup-order__icon {
-  position: absolute;
   cursor: pointer;
-  right: 20px;
-  top: 20px;
   background: transparent;
   border: 1px solid #DADADA;
   display: grid;
