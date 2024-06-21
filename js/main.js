@@ -164,7 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
     function heroSlider() {
         const heroSlider = new Swiper('.hero__slider', {
 
-            preventClicksPropagation: false,
+            touchMoveStopPropagation: true,
 
             pagination: {
                 el: ".hero__slider-pagination",
