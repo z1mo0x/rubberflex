@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
  
     // const menu = document.querySelector('#menu');
 
-        $(document.documentElement).mouseup(function (e){
+        $(document.documentElement).mousedown(function (e){
             var div = $("#menu"); 
             if (!div.is(e.target) 
                 && div.has(e.target).length === 0) { 
@@ -34,14 +34,14 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        $('.swiper').click(()=>{
-            $("#menu").removeClass('menu-active'); 
-            downMenuSecond.forEach((el) => {
-                if (el.classList.contains('second-lvl')) {
-                    el.classList.remove('second-lvl');
-                }
-            })
-        })
+        // $('.swiper').click(()=>{
+        //     $("#menu").removeClass('menu-active'); 
+        //     downMenuSecond.forEach((el) => {
+        //         if (el.classList.contains('second-lvl')) {
+        //             el.classList.remove('second-lvl');
+        //         }
+        //     })
+        // })
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
