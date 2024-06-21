@@ -27,6 +27,11 @@ window.addEventListener("DOMContentLoaded", () => {
             if (!div.is(e.target) 
                 && div.has(e.target).length === 0) { 
                 $("#menu").removeClass('menu-active'); 
+                downMenuSecond.forEach((el) => {
+                    if (el.classList.contains('second-lvl')) {
+                        el.classList.remove('second-lvl');
+                    }
+                })
             }
         });
     });
