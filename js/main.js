@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // const menu = document.querySelector('#menu');
 
     $('body').on('click', function(e){
-        if(e.target !== $('#menu') && e.target !== $('.sidebar__menu') && $('#menu').hasClass('menu-active') ){
+        if(e.target !== $('#menu') && e.target !== $('.sidebar__menu') ){
             $('#menu').removeClass('menu-active');
         }
         })
