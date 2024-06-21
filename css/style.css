@@ -518,12 +518,14 @@ background: white;
 }
 .sidebar__button {
   height: 350px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sidebar__button button {
   transform: rotate(90deg);
   transform-origin: 80px 0px;
-  margin-top: 130px;
+  margin-top: 50px;
   font-size: 20px;
   font-weight: 400;
   padding: 20px 15px;
