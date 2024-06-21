@@ -522,7 +522,7 @@ fieldset {
   -webkit-writing-mode: tb-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: tb-rl;
-  width: 100%;
+  width: 80px;
 }
 .sidebar__button button {
   -webkit-transform: rotate(180deg);
