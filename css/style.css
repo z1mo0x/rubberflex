@@ -505,7 +505,7 @@ background: white;
 .sidebar__menu {
   cursor: pointer;
 }
-.sidebar__line { 
+.sidebar__line {  
   padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
