@@ -528,9 +528,9 @@ fieldset {
           transform: rotate(180deg);
   font-size: 20px;
   font-weight: 400;
-  width: 275px;
   padding: 20px 15px;
   line-height: 100%;
+  width: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
