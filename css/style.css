@@ -523,13 +523,13 @@ background: white;
 .sidebar__button button {
   transform: rotate(90deg);
   transform-origin: 80px 0px 80px 0px;
+  width: 300px;
+  height: 80px;
   margin-top: 30px;
   font-size: 20px;
   font-weight: 400;
   padding: 20px 15px;
   line-height: 100%;
-  width: 300px;
-  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
