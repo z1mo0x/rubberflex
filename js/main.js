@@ -19,14 +19,14 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
  
-    const menu = document.querySelector('#menu');
+    // const menu = document.querySelector('#menu');
 
-    $(document).mouseup( function(e){ 
-        if ( !menu.is(e.target)
-            && menu.has(e.target).length === 0 ) {
-                menu.classList.remove('menu-active');
+    $('body').on('click', function(e){
+        if(e.target !== $('#menu') && e.target !== $('.sidebar__menu') && $('#menu').hasClass('menu-active') ){
+            $('#menu').removeClass('menu-active');
         }
-    });
+        })
+        
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
