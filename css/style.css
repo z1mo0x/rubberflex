@@ -3522,7 +3522,8 @@ body {
   }
   .consultation__form input {
     height: 50px;
-    width: 100%;
+    width: 100%;  
+    max-width: unset;
   }
   .consultation__button {
     width: 100%;
