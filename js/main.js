@@ -20,8 +20,9 @@ window.addEventListener("DOMContentLoaded", () => {
     })
 
     $(document).mouseup(function (e) {
+        e.stopPropagation()
         if (sidebarContent.has(e.target).length === 0){
-            sidebarContent.hide();
+            sidebarContent.classList.remove('menu-active')
         }
     });
 
