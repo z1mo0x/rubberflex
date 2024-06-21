@@ -423,7 +423,17 @@ fieldset {
 }
 .header__button {
   border: 1px solid #C1C1C1;
+  
 }
+
+.header__button:nth-child(1){
+  width: 200px;
+}
+
+.header__button:nth-child(2){
+  width: 300px;
+}
+
 .header__button:hover {
   border: 1px solid #C1C1C1;
 }

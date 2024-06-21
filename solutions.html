@@ -354,6 +354,102 @@
         </div>
     </footer>
 
+
+    
+    <div class="popup-zakaz" id="zakaz">
+        <div class="popup-zakaz__wrapper">
+            <div data-fancybox-close class="popup__close"><img src="img/close.png" alt=""></div>
+            <div class="popup__block">
+                <div class="popup__title">Оформление заказа</div>
+                <div class="popup-zakaz__image">
+                    <img src="img/card-image.png" alt="">
+                    <p>Рулонная кровельная мембрана RUBBERFLEX® RX 5500</p>
+                </div>
+                <form action="" class="popup-zakaz__form">
+                    <div class="popup-zakaz__block">
+                        <div class="popup-zakaz__block-title"><span>01</span>Выберите ширину полотна</div>
+                        <div class="popup-zakaz__block-radio popup-zakaz__block-left">
+                            <div class="form_radio_btn">
+                                <input id="radio-1" type="radio" name="radio" value="2,1" checked>
+                                <label for="radio-1">2,1</label>
+                            </div>
+                            <div class="form_radio_btn">
+                                <input id="radio-2" type="radio" name="radio" value="1,05">
+                                <label for="radio-2">1,05</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-zakaz__block">
+                        <div class="popup-zakaz__block-title"><span>02</span>Укажите необходимое количество</div>
+                        <div class="popup-zakaz__block-number popup-zakaz__block-left">
+                            <div class="popup-zakaz__minus"><img src="img/minus-circle-t.png" alt=""></div>
+                            <input type="number" class="popup-zakaz__number-input" value="1" min="1">
+                            <div class="popup-zakaz__plus"><img src="img/pluc-circle-t.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="popup-zakaz__block">
+                        <div class="popup-zakaz__block-title"><span>03</span>Выберите ваш город</div>
+                        <div class="popup-order__item">
+                            <div class="popup-order__item-input">
+                                <select class="popup__input popup-order__select" name="" id="">
+                                    <option value="">Москва и МО</option>
+                                    <option value="">Тула</option>
+                                    <option value="">Питер</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-zakaz__block">
+                        <div class="popup-zakaz__block-title"><span>04</span>Укажите контактные данные</div>
+                        <div class="popup-zakaz__block-info">
+                            <div class="popup-order__item">
+                                <div class="popup-order__item-name">ФИО</div>
+                                <div class="popup-order__item-input">
+                                    <input type="text" class="popup__input" placeholder="Иван Иванов">
+                                </div>
+                            </div>
+                            <div class="popup-order__item">
+                                <div class="popup-order__item-name">Телефон</div>
+                                <div class="popup-order__item-input">
+                                    <input type="tel" class="popup__input maskphone" placeholder="+7 (9--) --- -- --">
+                                </div>
+                            </div>
+                            <div class="popup-order__item">
+                                <div class="popup-order__item-name">Электронная почта</div>
+                                <div class="popup-order__item-input">
+                                    <input type="mail" class="popup__input" placeholder="example@mail.ru">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-zakaz__block">
+                        <div class="popup-zakaz__block-title"><span>05</span>При необходимости добавьте комментарий
+                        </div>
+                        <div class="popup-zakaz__block-info">
+                            <div class="popup-order__item">
+                                <div class="popup-order__item-input popup-order__item-textarea">
+                                    <img class="popup-order__icon" src="img/paperclip.png" alt="">
+                                    <textarea type="mail" class="popup__input"
+                                        placeholder="Введите текст..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="popup__button button">Отправить</button>
+                    <div class="popup__form-checkbox">
+                        <label for="zakazCheck">
+                            <input type="checkbox" checked id="zakazCheck" value="Y">
+                            <span class="popup__form-label">Я подтверждаю согласие на
+                                <a href="">обработку моих персональных данных</a>
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <div class="popup" id="consult">
         <div class="popup__wrapper">
             <div data-fancybox-close class="popup__close"><img src="img/close.png" alt=""></div>
