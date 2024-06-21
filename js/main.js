@@ -34,6 +34,15 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
 
+        $('.swiper').onclick(()=>{
+            $("#menu").removeClass('menu-active'); 
+            downMenuSecond.forEach((el) => {
+                if (el.classList.contains('second-lvl')) {
+                    el.classList.remove('second-lvl');
+                }
+            })
+        })
+
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
             e.stop
