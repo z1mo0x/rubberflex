@@ -428,6 +428,7 @@ fieldset {
 
 .header__button:nth-child(2){
   width: 200px;
+  text-align: center;
 }
 
 .header__button:nth-child(3){
