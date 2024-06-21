@@ -1583,6 +1583,7 @@ body {
 }
 .popup-order__select option {
   font-size: 18px;
+  font-family: "RF Dewi Extended";
 }
 .popup-order__item-name {
   color: var(--second_grey, rgba(53, 53, 53, 0.5));
