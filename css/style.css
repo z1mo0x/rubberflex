@@ -1634,6 +1634,7 @@ body {
 
 .popup__form-label {
   display: grid;
+  font-size: 14px;
 }
 
 .popup__form-label a {
