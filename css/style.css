@@ -1591,6 +1591,16 @@ body {
   font-size: 15px;
   line-height: 130%;
 }
+.popup-order__item-file input{
+  display: none;
+}
+
+.popup-order__item-file{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
 .popup-order__item-textarea {
   position: relative;
 }
