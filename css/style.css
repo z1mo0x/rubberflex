@@ -1576,7 +1576,7 @@ body {
   font-weight: 400;
   line-height: 130%;
   appearance: none;
-  background-image: url(arrow_custom.svg) no-repeat right;
+  background-image: url(../img/arrow_custom.svg) no-repeat right;
   background-position-x: calc(100% - 8px);
 }
 .popup-order__select option {
