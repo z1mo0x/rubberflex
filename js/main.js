@@ -36,6 +36,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
+            e.stop
             downMenuSecond.forEach((el) => {
                 if (el.classList.contains('second-lvl')) {
                     el.classList.remove('second-lvl');
@@ -162,6 +163,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function heroSlider() {
         const heroSlider = new Swiper('.hero__slider', {
+
+            preventClicksPropagation: false,
 
             pagination: {
                 el: ".hero__slider-pagination",
