@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
  
-    const menu = document.querySelector( '#menu');
+    const menu = document.querySelector('#menu');
 
     $(document).mouseup( function(e){ 
         if ( !menu.is(e.target)
@@ -27,6 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 menu.classList.remove('menu-active');
         }
     });
+
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
             downMenuSecond.forEach((el) => {
