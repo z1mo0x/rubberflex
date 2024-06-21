@@ -517,7 +517,7 @@ background: white;
   background: #6CA195;
 }
 .sidebar__button {
-  
+  height: 300px;
 }
 .sidebar__button button {
   transform: rotate(90deg);
