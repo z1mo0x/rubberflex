@@ -13,9 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
         element.addEventListener('click', (e) => {
             e.stopPropagation();
             $(document).click(function (e) {
-                if (sidebarContent.has(e.target).length === 0){
                     sidebarContent.classList.toggle('menu-active');
-                }
             });
             downMenuSecond.forEach((el) => {
                 if (el.classList.contains('second-lvl')) {
