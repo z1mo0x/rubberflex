@@ -12,8 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
             $(document).mouseup(function (e) {
-                
-                if (container.has(e.target).length === 0){
+                if (sidebarContent.has(e.target).length === 0){
                     sidebarContent.classList.toggle('menu-active');
                 }
             });
