@@ -1620,6 +1620,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 100%;
 }
 
 .popup__form-checkbox input[type=checkbox] {
@@ -2575,6 +2576,10 @@ body {
   }
   .catalog__products-big {
     gap: 50px;
+  }
+
+  .product-big{
+    margin-top: 50px;
   }
   .advantages__item-title {
     font-size: 20px;
