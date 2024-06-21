@@ -516,12 +516,13 @@ fieldset {
   background: #6CA195;
 }
 .sidebar__button {
-  display: block;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    margin-top: 100px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  width: 100%;
 }
 .sidebar__button button {
   -webkit-transform: rotate(180deg);
