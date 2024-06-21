@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const headerMenuButton = document.querySelector('.header-mobile__menu')
     const sidebarClose = document.querySelector('.menu__close');
     const secondMenuClose = document.querySelectorAll('.menu__downmenu-close')
-    const sidebarContent = document.querySelector('.menu');
+    const sidebarContent = document.querySelector('#menu');
     const downMenuButtons = document.querySelectorAll('.menu__toggle-button');
     const downMenuSecond = document.querySelectorAll('.menu__downbackground')
 
@@ -19,14 +19,13 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
  
-        document.addEventListener( 'click', (e) => {
-            const withinBoundaries = e.composedPath().includes(sidebarContent);
-        
-            if ( ! withinBoundaries ) {
-                sidebarContent.classList.remove('menu-active') // скрываем элемент т к клик был за его пределами
-            }
-        })
 
+    $(document).mouseup( function(e){ 
+        if ( !sidebarContent.is(e.target)
+            && sidebarContent.has(e.target).length === 0 ) {
+                sidebarContent.classList.remove('menu-active');
+        }
+    });
     downMenuButtons.forEach((element, index) => {
         element.addEventListener('click', (e) => {
             downMenuSecond.forEach((el) => {
