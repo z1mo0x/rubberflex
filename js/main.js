@@ -9,8 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const downMenuSecond = document.querySelectorAll('.menu__downbackground')
 
     window.addEventListener('keydown',(e)=>{
-        console.log(e.key);
-        if(e.key === 'esc'){
+        if(e.key === 'Escape'){
             sidebarContent.classList.toggle('menu-active')
         }
     })
