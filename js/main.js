@@ -19,12 +19,9 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    const div = document.querySelector('.menu');
-
-    $(document).mouseup( function(e){ 
-            e.stopPropagation()
-            if (div !== e.target) {
-                sidebarContent.classList.remove('menu-active')
+    $(document).mouseup(function (e) {
+        if (sidebarContent.has(e.target).length === 0){
+            sidebarContent.hide();
         }
     });
 
